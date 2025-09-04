@@ -51,12 +51,12 @@ header {
   z-index: 1000;
 }
 
-header .logo {
+header .Logo {
   display: flex;
   align-items: center;
 }
 
-header .logo img {
+header .Logo img {
   width: 60px;
   margin-right: 15px;
 }
@@ -251,4 +251,5 @@ footer {
   .service-container {
     grid-template-columns: 1fr;
   }
+
 }
