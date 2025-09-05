@@ -51,12 +51,12 @@ header {
   z-index: 1000;
 }
 
-header .Logo {
+header .logo {
   display: flex;
   align-items: center;
 }
 
-header .Logo img {
+header .logo img {
   width: 60px;
   margin-right: 15px;
 }
@@ -253,3 +253,4 @@ footer {
   }
 
 }
+
