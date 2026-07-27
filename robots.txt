@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harishkumar-234.github.io/SYNC/sitemap.xml
