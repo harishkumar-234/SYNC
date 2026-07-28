@@ -1,97 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - SYNC</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Video Background -->
-  <div class="video-background">
-    <video autoplay muted loop id="bg-video">
-      <source src="video 2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  
-  <!-- Overlay for readability -->
-  <div class="overlay"></div>
+  <title>About Us - SYNC | Smart Young Next-Gen Coders</title>
+  <meta name="description"
+    content="Learn about SYNC co-founded by P. Harish Kumar, B.E., our team, vision, mission, and dedication to modern software engineering.">
 
-  <!-- Header -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader_inner">
+      <img src="Logo.png" alt="SYNC Logo">
+      <div class="preloader-spinner"></div>
+    </div>
+  </div>
+
+  <!-- Fixed Vertical Quote Button -->
+  <div class="fixed_quote trigger-quote-modal">
+    <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i> Get Quote
+  </div>
+
+  <!-- Floating Action Buttons -->
+  <a href="https://wa.me/919952242624?text=Hi%20SYNC%20Team,%20I%20want%20to%20inquire%20about%20your%20services."
+    class="floating_whatsapp" target="_blank" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <a href="tel:+919952242624" class="floating_call" title="Call Us Now">
+    <i class="fa-solid fa-phone"></i>
+  </a>
+
+  <!-- Header Navigation -->
   <header>
     <div class="logo">
       <img src="Logo.png" alt="SYNC Logo">
-      <h1>SYNC</h1>
-      <p>Smart Young Next-Gen Coders</p>
+      <div class="logo-text">
+        <h1>SYNC<span>.</span></h1>
+        <p>Smart Young Next-Gen Coders</p>
+      </div>
     </div>
-    <nav>
+
+    <div class="mobile-nav-toggle" id="mobileNavToggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav id="mainNav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Our Projects</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" class="header-cta-btn trigger-quote-modal"><i class="fa-solid fa-bolt"></i> Get Quote</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- About Section -->
-  <section class="about">
-    <h2>About SYNC</h2>
-    <div class="about-content">
-      <div class="about-text">
+  <section class="about-section p-80">
+    <div class="section-title-wrap">
+      <span class="section-badge">Who We Are</span>
+      <p class="script-title">Our Identity & Mission</p>
+      <h2>About <span>SYNC</span></h2>
+      <p class="section-desc">Empowering organizations with next-generation web technologies, creative design, and
+        robust code engineering.</p>
+    </div>
+
+    <div class="about-intro-grid">
+      <div class="glass-card about-text-content">
+        <h3><i class="fa-solid fa-lightbulb" style="color: var(--yellow-color);"></i> Building the Future of Web &
+          Software</h3>
         <p>
-          SYNC (Smart Young Next-Gen Coders) is a creative tech company co-founded by 
-          <b>P. Harish Kumar, B.E.</b> with a mission to build modern, scalable, and innovative digital solutions. 
-          We specialize in professional freelancing and web development services to empower businesses globally.
+          <strong>SYNC (Smart Young Next-Gen Coders)</strong> is an innovative technology company co-founded by
+          <strong>P. Harish Kumar, B.E.</strong> with a mission to engineer scalable, high-speed, and aesthetically
+          stunning digital applications.
         </p>
-        
-        <h3>Our Vision</h3>
-        <p>To become a leading provider of innovative digital solutions that transform businesses and create exceptional user experiences.</p>
-        
-        <h3>Our Mission</h3>
-        <p>To deliver high-quality, scalable, and future-ready web and mobile applications that exceed client expectations.</p>
-        
-        <h3>Our Values</h3>
-        <ul>
-          <li>Innovation: We embrace new technologies and creative approaches</li>
-          <li>Quality: We never compromise on the quality of our deliverables</li>
-          <li>Client Satisfaction: Our success is measured by our clients' success</li>
-          <li>Continuous Learning: We stay updated with the latest industry trends</li>
-          <li>Professional Excellence: We maintain the highest standards in all our work</li>
+        <p>
+          We specialize in custom web solutions, mobile app architectures, end-to-end full-stack development, and
+          professional freelancing services tailored for businesses, startups, and enterprises worldwide.
+        </p>
+      </div>
+
+      <div class="glass-card about-text-content">
+        <h3><i class="fa-solid fa-bullseye" style="color: var(--yellow-color);"></i> Vision & Core Values</h3>
+        <ul class="values-list">
+          <li><i class="fa-solid fa-circle-check"></i> <strong>Innovation:</strong> Embracing cutting-edge technology &
+            creative design</li>
+          <li><i class="fa-solid fa-circle-check"></i> <strong>Quality:</strong> Uncompromising standards in software
+            architecture</li>
+          <li><i class="fa-solid fa-circle-check"></i> <strong>Client Success:</strong> Crafting solutions that generate
+            measurable value</li>
+          <li><i class="fa-solid fa-circle-check"></i> <strong>Agility:</strong> Delivering rapid turnarounds and
+            seamless updates</li>
         </ul>
       </div>
-      
-      <div class="team-section">
-        <h3>Our Team</h3>
-        <div class="team-container">
-          <div class="team-member">
-            <h4>P. Harish Kumar, B.E.</h4>
-            <p>Founder & Lead Developer</p>
-            <p>Expertise: Full Stack Development, Web Design, Web Development, Project Management, Leadership</p>
-          </div>
-          <div class="team-member">
-            <h4>S. Kathiravan</h4>
-            <p>Manager</p>
-            <p>Expertise: Full Stack Development, Web Design, Web Development, Project Management</p>
-          </div>
-          <div class="team-member">
-            <h4>Our Developers</h4>
-            <p>Skilled professionals specializing in various technologies</p>
-            <p>Expertise: HTML, CSS, JAVASCRIPT, PHP, MYSQL, Mobile App Development, Database Management</p>
-          </div>
-        </div>
+    </div>
+
+    <div class="section-title-wrap" style="margin-top: 60px;">
+      <span class="section-badge">Our Experts</span>
+      <p class="script-title">Passionate Engineers & Designers</p>
+      <h2>Meet The <span>SYNC Team</span></h2>
+    </div>
+
+    <div class="team-container">
+      <div class="glass-card team-member">
+        <div class="icon-box"><i class="fa-solid fa-user-tie"></i></div>
+        <h4>P. Harish Kumar, B.E.</h4>
+        <div class="role">Founder & Lead Software Engineer</div>
+        <p>Expertise in Full Stack Engineering, Solution Architecture, UI/UX Design, and Product Management.</p>
+      </div>
+
+      <div class="glass-card team-member">
+        <div class="icon-box"><i class="fa-solid fa-user-tie"></i></div>
+        <h4>S. Kathiravan</h4>
+        <div class="role">Co - Founder</div>
+        <p>Expertise: HTML, CSS, JAVASCRIPT, PHP, MYSQL, Mobile App Development, Database Management.</p>
+      </div>
+
+      <div class="glass-card team-member">
+        <div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div>
+        <h4>UI/UX Creative Designers</h4>
+        <div class="role">Design Strategists</div>
+        <p>Crafting intuitive user interfaces, visual design systems, brand identities, and responsive layouts.</p>
       </div>
     </div>
-    
-    <a href="contact.html" class="btn">Get In Touch</a>
+
+    <div style="text-align: center; margin-top: 50px;">
+      <a href="contact.html" class="btn"><i class="fa-solid fa-comments"></i> Start A Conversation</a>
+    </div>
   </section>
+
+  <!-- Quote Request Modal Popup -->
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal-card">
+      <div class="modal-close" id="closeQuoteModal">&times;</div>
+      <div class="modal-header">
+        <p class="script-title">Get In Touch</p>
+        <h3>Request a Free Quote</h3>
+        <p>Tell us about your project requirements and we will send you a tailored estimate within 24 hours.</p>
+      </div>
+
+      <form id="modalQuoteForm">
+        <div class="form-group">
+          <label for="modal_name"><i class="fa-solid fa-user"></i> Full Name</label>
+          <input type="text" id="modal_name" class="form-control" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_phone"><i class="fa-solid fa-phone"></i> Phone / Mobile Number</label>
+          <input type="tel" id="modal_phone" class="form-control" placeholder="Enter your mobile number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+          <input type="email" id="modal_email" class="form-control" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_service"><i class="fa-solid fa-list-check"></i> Service Required</label>
+          <select id="modal_service" class="form-control" required>
+            <option value="Web Development">Web Development</option>
+            <option value="Mobile App Development">Mobile App Development</option>
+            <option value="Freelance Consultation">Freelancing Solutions</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Full Stack Project">Full Stack Development</option>
+            <option value="Web Maintenance">Web Maintenance & Hosting</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_message"><i class="fa-solid fa-message"></i> Project Details</label>
+          <textarea id="modal_message" class="form-control" rows="2"
+            placeholder="Briefly describe your project goals..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send Quote
+          Request</button>
+      </form>
+      <div id="modalFormMessage" class="form-message"></div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 SYNC - Smart Young Next-Gen Coders. All rights reserved.</p>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="Logo.png" alt="SYNC Logo">
+        <div>
+          <h3>SYNC</h3>
+          <p>Smart Young Next-Gen Coders</p>
+        </div>
+      </div>
+
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="social-icons">
+        <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/harishkumar-234" target="_blank" class="social-icon" title="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram"><i
+            class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <p class="copyright">© 2025 SYNC - Smart Young Next-Gen Coders. Co-founded by P. Harish Kumar, B.E. All rights
+      reserved.</p>
   </footer>
 
   <script src="script.js"></script>
