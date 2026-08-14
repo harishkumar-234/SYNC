@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services - SYNC | Smart Young Next-Gen Coders</title>
-  <meta name="description" content="Explore SYNC's full suite of software development services: Web Development, Mobile Apps, UI/UX Design, Database Architecture, Full Stack Engineering & Web Hosting.">
-  
+  <title>SYNC | Smart Young NextGen Coders</title>
+  <meta name="description"
+    content="Explore SYNC's agency services including professional websites, custom web applications, mobile apps, UI/UX prototyping, payment gateway setups, and maintenance.">
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
   <!-- Preloader -->
   <div class="preloader" id="preloader">
     <div class="preloader_inner">
-      <img src="Logo.png" alt="SYNC Logo">
+      <div class="preloader-logo">SYNC</div>
       <div class="preloader-spinner"></div>
     </div>
   </div>
@@ -24,147 +27,172 @@
     <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i> Get Quote
   </div>
 
-  <!-- Floating Action Buttons -->
-  <a href="https://wa.me/919952242624?text=Hi%20SYNC%20Team,%20I%20want%20to%20inquire%20about%20your%20services." class="floating_whatsapp" target="_blank" title="Chat on WhatsApp">
+  <!-- Floating Actions -->
+  <a href="https://wa.me/919952242624?text=Hello%20SYNC,%20I%20would%20like%20to%20discuss%20a%20project."
+    class="floating-whatsapp" target="_blank" rel="noopener noreferrer" title="Chat with SYNC">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
-  <a href="tel:+919952242624" class="floating_call" title="Call Us Now">
+  <a href="tel:+919952242624" class="floating-call" title="Call Us Now">
     <i class="fa-solid fa-phone"></i>
   </a>
 
   <!-- Header Navigation -->
   <header>
-    <div class="logo">
-      <img src="Logo.png" alt="SYNC Logo">
-      <div class="logo-text">
-        <h1>SYNC<span>.</span></h1>
-        <p>Smart Young Next-Gen Coders</p>
-      </div>
-    </div>
-    
-    <div class="mobile-nav-toggle" id="mobileNavToggle">
-      <i class="fa-solid fa-bars"></i>
-    </div>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-text">SYNC<span>.</span></div>
+      </a>
 
-    <nav id="mainNav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="#" class="header-cta-btn trigger-quote-modal"><i class="fa-solid fa-bolt"></i> Get Quote</a></li>
-      </ul>
-    </nav>
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="btn btn-primary trigger-quote-modal">Start a Project</button></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Services Section -->
-  <section class="services-section p-80">
-    <div class="section-title-wrap">
-      <span class="section-badge">What We Do</span>
-      <p class="script-title">High Performance Solutions</p>
-      <h2>Our Digital <span>Services</span></h2>
-      <p class="section-desc">We offer end-to-end technology solutions to accelerate your business growth and digital presence.</p>
+  <!-- Inner Page Banner -->
+  <section class="p-80"
+    style="padding-top: 140px; border-bottom: 1px solid var(--border-color); background: rgba(12, 16, 29, 0.2);">
+    <div class="container" style="text-align: center;">
+      <span class="section-badge">Capabilities</span>
+      <h1 style="font-size: 3rem; margin-bottom: 16px;">Everything You Need to Build Your Digital Presence</h1>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">We develop robust backend engines,
+        responsive web experiences, and customer-focused mobile layouts to solve actual business problems.</p>
     </div>
+  </section>
 
-    <div class="service-container">
-      
-      <!-- Service 1 -->
-      <div class="glass-card service-card">
-        <div>
-          <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
-          <h3>Web Development</h3>
-          <p>Responsive, lightning-fast, and custom websites designed to convert visitors into loyal customers.</p>
+  <!-- Service Cards Section -->
+  <section class="p-80">
+    <div class="container">
+      <div class="services-grid">
+
+        <!-- Card 1: Business Websites -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Business Websites</h3>
+          <p>Professional, responsive websites designed to establish your brand authority, capture leads, and display
+            products cleanly.</p>
           <ul>
-            <li><i class="fa-solid fa-check"></i> Custom Web Application Development</li>
-            <li><i class="fa-solid fa-check"></i> E-Commerce Stores & Platforms</li>
-            <li><i class="fa-solid fa-check"></i> Responsive & Mobile-First Layouts</li>
-            <li><i class="fa-solid fa-check"></i> Landing Pages & Portfolios</li>
+            <li><i class="fa-solid fa-circle-check"></i> Corporate websites</li>
+            <li><i class="fa-solid fa-circle-check"></i> Landing pages</li>
+            <li><i class="fa-solid fa-circle-check"></i> Portfolio websites</li>
+            <li><i class="fa-solid fa-circle-check"></i> WhatsApp integrations</li>
           </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
         </div>
-        <a href="#" class="btn trigger-quote-modal"><i class="fa-solid fa-paper-plane"></i> Request Quote</a>
-      </div>
 
-      <!-- Service 2 -->
-      <div class="glass-card service-card">
-        <div>
-          <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-          <h3>Mobile App Development</h3>
-          <p>Feature-rich native and cross-platform mobile apps for Android and iOS devices.</p>
+        <!-- Card 2: Web Applications -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Web Applications</h3>
+          <p>Custom web applications designed around your workflow rules to handle database tasks and metrics.</p>
           <ul>
-            <li><i class="fa-solid fa-check"></i> Native iOS App Development</li>
-            <li><i class="fa-solid fa-check"></i> Native Android App Development</li>
-            <li><i class="fa-solid fa-check"></i> Cross-Platform Apps (Flutter/React Native)</li>
-            <li><i class="fa-solid fa-check"></i> App Store & Play Store Deployment</li>
+            <li><i class="fa-solid fa-circle-check"></i> Admin dashboards</li>
+            <li><i class="fa-solid fa-circle-check"></i> Management systems</li>
+            <li><i class="fa-solid fa-circle-check"></i> Customer portals</li>
+            <li><i class="fa-solid fa-circle-check"></i> CRMs and data logs</li>
           </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
         </div>
-        <a href="#" class="btn trigger-quote-modal"><i class="fa-solid fa-paper-plane"></i> Request Quote</a>
-      </div>
 
-      <!-- Service 3 -->
-      <div class="glass-card service-card">
-        <div>
-          <div class="service-icon"><i class="fa-solid fa-code-branch"></i></div>
-          <h3>Freelancing Solutions</h3>
-          <p>On-demand developer support, rapid bug fixing, custom script writing, and consultation.</p>
+        <!-- Card 3: Mobile Applications -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Mobile Applications</h3>
+          <p>User-friendly Android applications built for customers, businesses, and internal employee pipelines.</p>
           <ul>
-            <li><i class="fa-solid fa-check"></i> Hourly & Dedicated Freelance Coding</li>
-            <li><i class="fa-solid fa-check"></i> Bug Fixing & Performance Tuning</li>
-            <li><i class="fa-solid fa-check"></i> Code Audit & Architecture Review</li>
-            <li><i class="fa-solid fa-check"></i> Third-Party API Integrations</li>
+            <li><i class="fa-solid fa-circle-check"></i> Android apps</li>
+            <li><i class="fa-solid fa-circle-check"></i> REST API bindings</li>
+            <li><i class="fa-solid fa-circle-check"></i> Push notifications</li>
+            <li><i class="fa-solid fa-circle-check"></i> User authentication</li>
           </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
         </div>
-        <a href="#" class="btn trigger-quote-modal"><i class="fa-solid fa-paper-plane"></i> Request Quote</a>
-      </div>
 
-      <!-- Service 4 -->
-      <div class="glass-card service-card">
-        <div>
-          <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+        <!-- Card 4: E-Commerce -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+          <h3>E-Commerce</h3>
+          <p>Custom digital stores configured to present catalog data, process payments safely, and manage order
+            lifecycles.</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Product catalogs</li>
+            <li><i class="fa-solid fa-circle-check"></i> Shopping carts & checkout</li>
+            <li><i class="fa-solid fa-circle-check"></i> Payment integrations</li>
+            <li><i class="fa-solid fa-circle-check"></i> Order admin dashboards</li>
+          </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
+        </div>
+
+        <!-- Card 5: UI/UX Design -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
           <h3>UI/UX Design</h3>
-          <p>Modern visual design, interactive prototypes, and seamless user experiences.</p>
+          <p>User research, user journey mapping, design systems, and wireframe prototypes for web/mobile interfaces.
+          </p>
           <ul>
-            <li><i class="fa-solid fa-check"></i> User Interface & Visual Design</li>
-            <li><i class="fa-solid fa-check"></i> User Experience & Journey Mapping</li>
-            <li><i class="fa-solid fa-check"></i> Wireframing & Figma Prototyping</li>
-            <li><i class="fa-solid fa-check"></i> Complete Design Systems</li>
+            <li><i class="fa-solid fa-circle-check"></i> Website UI layouts</li>
+            <li><i class="fa-solid fa-circle-check"></i> Mobile app screens</li>
+            <li><i class="fa-solid fa-circle-check"></i> Interactive prototypes</li>
+            <li><i class="fa-solid fa-circle-check"></i> Custom Figma components</li>
           </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
         </div>
-        <a href="#" class="btn trigger-quote-modal"><i class="fa-solid fa-paper-plane"></i> Request Quote</a>
-      </div>
 
-      <!-- Service 5 -->
-      <div class="glass-card service-card">
-        <div>
-          <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
-          <h3>Full Stack Development</h3>
-          <p>Complete web solutions bridging front-end elegance with robust back-end systems.</p>
+        <!-- Card 6: Maintenance & Support -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3>Maintenance & Support</h3>
+          <p>Ongoing patch updates, data backup verifications, security logs auditing, and platform load enhancements.
+          </p>
           <ul>
-            <li><i class="fa-solid fa-check"></i> React, Vue & Angular Frontends</li>
-            <li><i class="fa-solid fa-check"></i> Node.js, Python & PHP Backends</li>
-            <li><i class="fa-solid fa-check"></i> RESTful APIs & GraphQL Integration</li>
-            <li><i class="fa-solid fa-check"></i> Secure Authentication Systems</li>
+            <li><i class="fa-solid fa-circle-check"></i> Real-time debugging</li>
+            <li><i class="fa-solid fa-circle-check"></i> Core version updates</li>
+            <li><i class="fa-solid fa-circle-check"></i> Speed & SEO tuning</li>
+            <li><i class="fa-solid fa-circle-check"></i> Security configurations</li>
           </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
         </div>
-        <a href="#" class="btn trigger-quote-modal"><i class="fa-solid fa-paper-plane"></i> Request Quote</a>
-      </div>
 
-      <!-- Service 6 -->
-      <div class="glass-card service-card">
-        <div>
-          <div class="service-icon"><i class="fa-solid fa-database"></i></div>
-          <h3>Database Engineering</h3>
-          <p>Scalable database design, high-speed queries, schema modeling, and data migration.</p>
+        <!-- Card 7: API & Integration -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-link"></i></div>
+          <h3>API & Integration</h3>
+          <p>Bridge data communication paths between your main dashboard and third-party systems seamlessly.</p>
           <ul>
-            <li><i class="fa-solid fa-check"></i> Relational Databases (MySQL, PostgreSQL)</li>
-            <li><i class="fa-solid fa-check"></i> NoSQL Databases (MongoDB, Firebase)</li>
-            <li><i class="fa-solid fa-check"></i> Query Optimization & Indexing</li>
-            <li><i class="fa-solid fa-check"></i> Secure Data Backup & Migration</li>
+            <li><i class="fa-solid fa-circle-check"></i> Custom REST API hooks</li>
+            <li><i class="fa-solid fa-circle-check"></i> Gateway processing setup</li>
+            <li><i class="fa-solid fa-circle-check"></i> SMS and WhatsApp logs</li>
+            <li><i class="fa-solid fa-circle-check"></i> Database link pipelines</li>
           </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
         </div>
-        <a href="#" class="btn trigger-quote-modal"><i class="fa-solid fa-paper-plane"></i> Request Quote</a>
-      </div>
 
+        <!-- Card 8: Business Automation -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Business Automation</h3>
+          <p>Transform recursive manual tracking steps into programmed tasks to save resource time.</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Automated reports</li>
+            <li><i class="fa-solid fa-circle-check"></i> Event email updates</li>
+            <li><i class="fa-solid fa-circle-check"></i> Document generators</li>
+            <li><i class="fa-solid fa-circle-check"></i> Workflow integrations</li>
+          </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -173,45 +201,51 @@
     <div class="modal-card">
       <div class="modal-close" id="closeQuoteModal">&times;</div>
       <div class="modal-header">
-        <p class="script-title">Get In Touch</p>
         <h3>Request a Free Quote</h3>
-        <p>Tell us about your project requirements and we will send you a tailored estimate within 24 hours.</p>
+        <p>Tell us about your project requirements and we will send you a tailored estimate.</p>
       </div>
 
-      <form id="modalQuoteForm">
+      <form id="modalQuoteForm" class="contact-form">
         <div class="form-group">
-          <label for="modal_name"><i class="fa-solid fa-user"></i> Full Name</label>
-          <input type="text" id="modal_name" class="form-control" placeholder="Enter your full name" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="modal_phone"><i class="fa-solid fa-phone"></i> Phone / Mobile Number</label>
-          <input type="tel" id="modal_phone" class="form-control" placeholder="Enter your mobile number" required>
+          <label for="modal_name">Full Name *</label>
+          <input type="text" id="modal_name" name="name" class="form-control" placeholder="Enter your full name"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_email"><i class="fa-solid fa-envelope"></i> Email Address</label>
-          <input type="email" id="modal_email" class="form-control" placeholder="Enter your email address" required>
+          <label for="modal_phone">Phone / WhatsApp *</label>
+          <input type="tel" id="modal_phone" name="phone" class="form-control" placeholder="Enter your contact number"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_service"><i class="fa-solid fa-list-check"></i> Service Required</label>
-          <select id="modal_service" class="form-control" required>
-            <option value="Web Development">Web Development</option>
-            <option value="Mobile App Development">Mobile App Development</option>
-            <option value="Freelance Consultation">Freelancing Solutions</option>
+          <label for="modal_email">Email Address *</label>
+          <input type="email" id="modal_email" name="email" class="form-control" placeholder="name@company.com"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_service">Service Required *</label>
+          <select id="modal_service" name="project_type" class="form-control" required>
+            <option value="Website">Website Development</option>
+            <option value="Web Application">Web Application</option>
+            <option value="Mobile Application">Mobile Application</option>
+            <option value="E-Commerce">E-Commerce Development</option>
             <option value="UI/UX Design">UI/UX Design</option>
-            <option value="Full Stack Project">Full Stack Development</option>
-            <option value="Web Maintenance">Web Maintenance & Hosting</option>
+            <option value="Maintenance">Website Maintenance</option>
+            <option value="Bug Fixing">Bug Fixing</option>
+            <option value="API Integration">API Integration</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="modal_message"><i class="fa-solid fa-message"></i> Project Details</label>
-          <textarea id="modal_message" class="form-control" rows="2" placeholder="Briefly describe your project goals..." required></textarea>
+          <label for="modal_message">Project Details *</label>
+          <textarea id="modal_message" name="description" class="form-control" rows="3"
+            placeholder="Briefly describe your goals..." required></textarea>
         </div>
 
-        <button type="submit" class="btn" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send Quote Request</button>
+        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send
+          Quote Request</button>
       </form>
       <div id="modalFormMessage" class="form-message"></div>
     </div>
@@ -219,33 +253,64 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="Logo.png" alt="SYNC Logo">
-        <div>
-          <h3>SYNC</h3>
-          <p>Smart Young Next-Gen Coders</p>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>SYNC<span>.</span></h3>
+        <p>Digital Solutions for Growing Businesses</p>
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/harishkumar-234" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
 
-      <ul class="footer-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Featured Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
 
-      <div class="social-icons">
-        <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/harishkumar-234" target="_blank" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Business Websites</a></li>
+          <li><a href="services.html">Web Applications</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">E-Commerce</a></li>
+          <li><a href="services.html">UI/UX Design</a></li>
+          <li><a href="services.html">Maintenance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: <a href="mailto:harishhari3045@gmail.com"
+              style="color: var(--text-primary);">harishhari3045@gmail.com</a></li>
+          <li>WhatsApp: <a href="https://wa.me/919952242624" style="color: var(--text-primary);">+91 99522 42624</a>
+          </li>
+        </ul>
       </div>
     </div>
 
-    <p class="copyright">© 2025 SYNC - Smart Young Next-Gen Coders. Co-founded by P. Harish Kumar, B.E. All rights reserved.</p>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 SYNC. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
