@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Projects - SYNC | Portfolio & Featured Work</title>
+  <title>SYNC | Smart Young NextGen Coders</title>
   <meta name="description"
-    content="Explore featured digital projects built by SYNC: Ace Corporate Website, Allowance Tracker Web App, E-Commerce platforms, and custom software.">
+    content="Explore professional custom software platforms, mobile applications, admin dashboards, and business systems co-founded and built by SYNC.">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -27,188 +28,359 @@
     <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i> Get Quote
   </div>
 
-  <!-- Floating Action Buttons -->
-  <a href="https://wa.me/919952242624?text=Hi%20SYNC%20Team,%20I%20want%20to%20inquire%20about%20your%20services."
-    class="floating_whatsapp" target="_blank" title="Chat on WhatsApp">
+  <!-- Floating Actions -->
+  <a href="https://wa.me/919952242624?text=Hello%20SYNC,%20I%20would%20like%20to%20discuss%20a%20project."
+    class="floating-whatsapp" target="_blank" rel="noopener noreferrer" title="Chat with SYNC">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
-  <a href="tel:+919952242624" class="floating_call" title="Call Us Now">
+  <a href="tel:+919952242624" class="floating-call" title="Call Us Now">
     <i class="fa-solid fa-phone"></i>
   </a>
 
   <!-- Header Navigation -->
   <header>
-    <div class="logo">
-      <img src="Logo.png" alt="SYNC Logo">
-      <div class="logo-text">
-        <h1>SYNC<span>.</span></h1>
-        <p>Smart Young Next-Gen Coders</p>
-      </div>
-    </div>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="Logo.png" alt="SYNC Logo">
+        <div class="logo-text">
+          <h1>SYNC<span>.</span></h1>
+          <p>Smart Young NextGen Coders</p>
+        </div>
+      </a>
 
-    <div class="mobile-nav-toggle" id="mobileNavToggle">
-      <i class="fa-solid fa-bars"></i>
-    </div>
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-    <nav id="mainNav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="#" class="header-cta-btn trigger-quote-modal"><i class="fa-solid fa-bolt"></i> Get Quote</a></li>
-      </ul>
-    </nav>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="btn btn-primary trigger-quote-modal">Start a Project</button></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Projects Section -->
-  <section class="projects-section p-80">
-    <div class="section-title-wrap">
-      <span class="section-badge">Our Portfolio</span>
-      <p class="script-title">Demonstrated Excellence</p>
-      <h2>Featured <span>Projects</span></h2>
-      <p class="section-desc">Explore a selection of recent web platforms, tools, and digital solutions created by SYNC.
-      </p>
-    </div>
-
-    <div class="projects-container">
-
-      <!-- Project 1 -->
-      <div class="glass-card project-card">
-        <div>
-          <span class="project-tag"><i class="fa-solid fa-user-graduate"></i> Education Website</span>
-          <h3>Ace Corporate Website</h3>
-          <p>A sleek, highly responsive corporate website designed for Ace with modern aesthetic layouts, fast
-            performance, and intuitive navigation.</p>
-        </div>
-        <div style="margin-top: 20px;">
-          <a href="https://harishkumar-234.github.io/ACE/" target="_blank" class="btn"><i
-              class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="glass-card project-card">
-        <div>
-          <span class="project-tag"><i class="fa-solid fa-home"></i> E-Commerce Site</span>
-          <h3>Real Estate Website</h3>
-          <p>A modern real estate platform featuring property listings, user dashboards, property management tools, and
-            seamless agent-client interaction capabilities.</p>
-        </div>
-        <div style="margin-top: 20px;">
-          <a href="https://harishkumar-234.github.io/Sync-Real-Estate/" target="_blank" class="btn"><i
-              class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="glass-card project-card">
-        <div>
-          <span class="project-tag"><i class="fa-solid fa-utensils"></i> E-Commerce Site</span>
-          <h3>Restaurant Website</h3>
-          <p>Restaurant website with online ordering and delivery features, including dynamic menu, cart management, and
-            secure checkout processing.</p>
-        </div>
-        <div style="margin-top: 20px;">
-          <a href="https://harishkumar-234.github.io/Sync-Restaurant/" target="_blank" class="btn"><i
-              class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-        </div>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="glass-card project-card">
-        <div>
-          <span class="project-tag"><i class="fa-solid fa-school"></i> Corporate Website</span>
-          <h3>School Management System</h3>
-          <p>A comprehensive school management platform enabling institutions to manage student records, academic
-            progress, fees, and administrative workflows efficiently.</p>
-        </div>
-        <div style="margin-top: 20px;">
-          <a href="https://harishkumar-234.github.io/Sync-School-Management/" target="_blank" class="btn"><i
-              class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-        </div>
-      </div>
-
-      <!-- Project 5 -->
-      <div class="glass-card project-card">
-        <div>
-          <span class="project-tag"><i class="fa-solid fa-bus-simple"></i> E-Commerce Site</span>
-          <h3>Red Holidays Tours & Travels</h3>
-          <p>Red Holidays Tours & Travels website with online booking and delivery features, including dynamic menu,
-            cart management, and
-            secure checkout processing.</p>
-        </div>
-        <div style="margin-top: 20px;">
-          <a href="https://redholidays.vercel.app/" target="_blank" class="btn"><i
-              class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-        </div>
-      </div>
-
-      <!-- Project 6 -->
-      <div class="glass-card project-card">
-        <div>
-          <span class="project-tag"><i class="fa-solid fa-bus-simple"></i> Dress Shop</span>
-          <h3>Sync Life Style</h3>
-          <p>Dress Shop website with online booking and delivery features, including dynamic menu,
-            cart management, and
-            secure checkout processing.</p>
-        </div>
-        <div style="margin-top: 20px;">
-          <a href="https://harishkumar-234.github.io/Sync-Life-Style/" target="_blank" class="btn"><i
-              class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-        </div>
-      </div>
-
+  <!-- Inner Page Banner -->
+  <section class="p-80"
+    style="padding-top: 140px; border-bottom: 1px solid var(--border-color); background: rgba(12, 16, 29, 0.2);">
+    <div class="container" style="text-align: center;">
+      <span class="section-badge">Case Studies</span>
+      <h1 style="font-size: 3rem; margin-bottom: 16px;">Featured Projects</h1>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Explore digital solutions, web
+        applications, and custom software systems built by SYNC to automate processes.</p>
     </div>
   </section>
+
+  <!-- Projects Section with Filter -->
+  <section class="p-80">
+    <div class="container">
+
+      <!-- Category Filter Buttons -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="website">Websites</button>
+        <button class="filter-btn" data-filter="webapp">Web Apps</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="business">Business Software</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: Restaurant Management System -->
+        <div class="project-card-wrapper" data-category="business" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <div class="project-placeholder-visual"><i class="fa-solid fa-utensils"></i></div>
+            </div>
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">Business Software</span>
+                <span class="project-concept-tag">SYNC Demo Project</span>
+              </div>
+              <h3>Restaurant Management System</h3>
+              <p>Designed to streamline tables order processing, POS billing queue, and automatic kitchen sync panels.
+              </p>
+              <div class="project-tech">Tech: Laravel / PHP / Bootstrap / MySQL</div>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="restaurant-management">Case
+                  Study</button>
+                <a href="https://harishkumar-234.github.io/Sync-Restaurant/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Clinic Appointment System -->
+        <div class="project-card-wrapper" data-category="webapp" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <div class="project-placeholder-visual"><i class="fa-solid fa-file-medical"></i></div>
+            </div>
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">Web Application</span>
+                <span class="project-concept-tag">SYNC Demo Project</span>
+              </div>
+              <h3>Clinic Appointment System</h3>
+              <p>Created to simplify doctor schedule bookings, electronic medical record lists, and SMS patient alert
+                reminders.</p>
+              <div class="project-tech">Tech: Laravel / PHP / React / SQLite</div>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="clinic-appointment">Case Study</button>
+                <button class="btn btn-secondary trigger-quote-modal"><i class="fa-solid fa-envelope"></i>
+                  Inquire</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Real Estate Platform -->
+        <div class="project-card-wrapper" data-category="ecommerce" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <div class="project-placeholder-visual"><i class="fa-solid fa-house-chimney"></i></div>
+            </div>
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">E-Commerce</span>
+                <span class="project-concept-tag">SYNC Demo Project</span>
+              </div>
+              <h3>Real Estate Platform</h3>
+              <p>Built to provide robust listing directories, customized search query parameters, and interactive agent
+                contact sheets.</p>
+              <div class="project-tech">Tech: React / Node.js / Express / MySQL</div>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="real-estate">Case Study</button>
+                <a href="https://harishkumar-234.github.io/Sync-Real-Estate/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: E-Commerce Store -->
+        <div class="project-card-wrapper" data-category="ecommerce" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <div class="project-placeholder-visual"><i class="fa-solid fa-bag-shopping"></i></div>
+            </div>
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">E-Commerce</span>
+                <span class="project-concept-tag">SYNC Demo Project</span>
+              </div>
+              <h3>E-Commerce Store</h3>
+              <p>Designed to optimize clothing checkout flows, catalog category rendering, discount rules, and local
+                payments.</p>
+              <div class="project-tech">Tech: HTML5 / CSS3 / JavaScript / Laravel</div>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="ecommerce">Case Study</button>
+                <a href="https://harishkumar-234.github.io/Sync-Life-Style/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Inventory Management System -->
+        <div class="project-card-wrapper" data-category="business" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <div class="project-placeholder-visual"><i class="fa-solid fa-boxes-stacked"></i></div>
+            </div>
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">Business Software</span>
+                <span class="project-concept-tag">Concept Project</span>
+              </div>
+              <h3>Inventory Management System</h3>
+              <p>Designed to track barcode scanner updates, low material flags, warehouse stocks, and suppliers
+                databases.</p>
+              <div class="project-tech">Tech: HTML5 / CSS3 / JavaScript / SQLite</div>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="inventory-management">Case Study</button>
+                <button class="btn btn-secondary trigger-quote-modal"><i class="fa-solid fa-envelope"></i>
+                  Inquire</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Student Management System -->
+        <div class="project-card-wrapper" data-category="business" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <div class="project-placeholder-visual"><i class="fa-solid fa-school"></i></div>
+            </div>
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">Business Software</span>
+                <span class="project-concept-tag">SYNC Demo Project</span>
+              </div>
+              <h3>Student Management System</h3>
+              <p>A comprehensive school database system handling student profiles, academic progress, grades logging,
+                and receipting.</p>
+              <div class="project-tech">Tech: Laravel / PHP / Bootstrap / MySQL</div>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="student-management">Case Study</button>
+                <a href="https://harishkumar-234.github.io/Sync-School-Management/" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-secondary"><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Business CRM -->
+        <div class="project-card-wrapper" data-category="business" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <div class="project-placeholder-visual"><i class="fa-solid fa-users-rectangle"></i></div>
+            </div>
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">Business Software</span>
+                <span class="project-concept-tag">Concept Project</span>
+              </div>
+              <h3>Business CRM</h3>
+              <p>Sales tracking pipeline tools featuring meeting logs, lead state graphs, task assign sheets, and
+                automated alerts.</p>
+              <div class="project-tech">Tech: React / Tailwind CSS / Laravel / MySQL</div>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="business-crm">Case Study</button>
+                <button class="btn btn-secondary trigger-quote-modal"><i class="fa-solid fa-envelope"></i>
+                  Inquire</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Mobile Business Application -->
+        <div class="project-card-wrapper" data-category="mobile" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <div class="project-placeholder-visual"><i class="fa-solid fa-mobile-button"></i></div>
+            </div>
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">Mobile App</span>
+                <span class="project-concept-tag">Concept Project</span>
+              </div>
+              <h3>Mobile Business Application</h3>
+              <p>An Android app optimized for catalog views, user account history logs, and background push
+                announcements.</p>
+              <div class="project-tech">Tech: Android SDK / Java / Kotlin / REST APIs</div>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="mobile-app">Case Study</button>
+                <button class="btn btn-secondary trigger-quote-modal"><i class="fa-solid fa-envelope"></i>
+                  Inquire</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Details Modal -->
+  <div class="modal-overlay" id="caseStudyModal">
+    <div class="modal-card">
+      <div class="modal-close">&times;</div>
+      <div class="modal-header">
+        <span class="section-badge" id="csIndustry">Industry</span>
+        <h3 id="csTitle" style="margin-top: 10px;">Project Title</h3>
+      </div>
+      <div class="case-study-details">
+        <div class="case-study-block">
+          <h4>The Challenge</h4>
+          <p id="csChallenge">Challenge description details...</p>
+        </div>
+        <div class="case-study-block">
+          <h4>The Solution</h4>
+          <p id="csSolution">Solution details...</p>
+        </div>
+        <div class="case-study-block">
+          <h4>Key Features Built</h4>
+          <p id="csFeatures" style="font-weight: 500; color: var(--text-primary);">Features list...</p>
+        </div>
+        <div class="case-study-block">
+          <h4>Technologies Used</h4>
+          <p id="csTech" style="font-family: monospace;">Tech info...</p>
+        </div>
+        <div class="case-study-block">
+          <h4>Outcome</h4>
+          <p id="csOutcome">Outcome details...</p>
+        </div>
+
+        <div
+          style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: center;">
+          <button class="btn btn-primary trigger-quote-modal"
+            onclick="document.getElementById('caseStudyModal').classList.remove('active')">Build Something
+            Similar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Quote Request Modal Popup -->
   <div class="modal-overlay" id="quoteModal">
     <div class="modal-card">
       <div class="modal-close" id="closeQuoteModal">&times;</div>
       <div class="modal-header">
-        <p class="script-title">Get In Touch</p>
         <h3>Request a Free Quote</h3>
-        <p>Tell us about your project requirements and we will send you a tailored estimate within 24 hours.</p>
+        <p>Tell us about your project requirements and we will send you a tailored estimate.</p>
       </div>
 
-      <form id="modalQuoteForm">
+      <form id="modalQuoteForm" class="contact-form">
         <div class="form-group">
-          <label for="modal_name"><i class="fa-solid fa-user"></i> Full Name</label>
-          <input type="text" id="modal_name" class="form-control" placeholder="Enter your full name" required>
+          <label for="modal_name">Full Name *</label>
+          <input type="text" id="modal_name" name="name" class="form-control" placeholder="Enter your full name"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_phone"><i class="fa-solid fa-phone"></i> Phone / Mobile Number</label>
-          <input type="tel" id="modal_phone" class="form-control" placeholder="Enter your mobile number" required>
+          <label for="modal_phone">Phone / WhatsApp *</label>
+          <input type="tel" id="modal_phone" name="phone" class="form-control" placeholder="Enter your contact number"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_email"><i class="fa-solid fa-envelope"></i> Email Address</label>
-          <input type="email" id="modal_email" class="form-control" placeholder="Enter your email address" required>
+          <label for="modal_email">Email Address *</label>
+          <input type="email" id="modal_email" name="email" class="form-control" placeholder="name@company.com"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_service"><i class="fa-solid fa-list-check"></i> Service Required</label>
-          <select id="modal_service" class="form-control" required>
-            <option value="Web Development">Web Development</option>
-            <option value="Mobile App Development">Mobile App Development</option>
-            <option value="Freelance Consultation">Freelancing Solutions</option>
+          <label for="modal_service">Service Required *</label>
+          <select id="modal_service" name="project_type" class="form-control" required>
+            <option value="Website">Website Development</option>
+            <option value="Web Application">Web Application</option>
+            <option value="Mobile Application">Mobile Application</option>
+            <option value="E-Commerce">E-Commerce Development</option>
             <option value="UI/UX Design">UI/UX Design</option>
-            <option value="Full Stack Project">Full Stack Development</option>
-            <option value="Web Maintenance">Web Maintenance & Hosting</option>
+            <option value="Maintenance">Website Maintenance</option>
+            <option value="Bug Fixing">Bug Fixing</option>
+            <option value="API Integration">API Integration</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="modal_message"><i class="fa-solid fa-message"></i> Project Details</label>
-          <textarea id="modal_message" class="form-control" rows="2"
-            placeholder="Briefly describe your project goals..." required></textarea>
+          <label for="modal_message">Project Details *</label>
+          <textarea id="modal_message" name="description" class="form-control" rows="3"
+            placeholder="Briefly describe your goals..." required></textarea>
         </div>
 
-        <button type="submit" class="btn" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send Quote
-          Request</button>
+        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send
+          Quote Request</button>
       </form>
       <div id="modalFormMessage" class="form-message"></div>
     </div>
@@ -216,35 +388,61 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="Logo.png" alt="SYNC Logo">
-        <div>
-          <h3>SYNC</h3>
-          <p>Smart Young Next-Gen Coders</p>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>SYNC<span>.</span></h3>
+        <p>Digital Solutions for Growing Businesses</p>
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/harishkumar-234" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
 
-      <ul class="footer-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Featured Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
 
-      <div class="social-icons">
-        <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn"><i
-            class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/harishkumar-234" target="_blank" class="social-icon" title="GitHub"><i
-            class="fa-brands fa-github"></i></a>
-        <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram"><i
-            class="fa-brands fa-instagram"></i></a>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Business Websites</a></li>
+          <li><a href="services.html">Web Applications</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">E-Commerce</a></li>
+          <li><a href="services.html">UI/UX Design</a></li>
+          <li><a href="services.html">Maintenance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: <a href="mailto:harishhari3045@gmail.com"
+              style="color: var(--text-primary);">harishhari3045@gmail.com</a></li>
+          <li>WhatsApp: <a href="https://wa.me/919952242624" style="color: var(--text-primary);">+91 99522 42624</a>
+          </li>
+        </ul>
       </div>
     </div>
 
-    <p class="copyright">© 2025 SYNC - Smart Young Next-Gen Coders. Co-founded by P. Harish Kumar, B.E. All rights
-      reserved.</p>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 SYNC. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
