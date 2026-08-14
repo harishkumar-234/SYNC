@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SYNC - Smart Young Next-Gen Coders | Best Web & App Development</title>
+  <title>SYNC | Smart Young NextGen Coders</title>
   <meta name="description"
-    content="SYNC (Smart Young Next-Gen Coders) offers top-tier Web Development, App Development, UI/UX Design, and Freelancing Solutions co-founded by P. Harish Kumar, B.E.">
+    content="SYNC builds modern business websites, custom web applications, mobile apps and digital solutions for startups and growing businesses.">
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
 
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,7 +18,7 @@
 
 <body>
 
-  <!-- Preloader (saitechnosolutions.com style) -->
+  <!-- Preloader -->
   <div class="preloader" id="preloader">
     <div class="preloader_inner">
       <img src="Logo.png" alt="SYNC Logo">
@@ -30,87 +31,516 @@
     <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i> Get Quote
   </div>
 
-  <!-- Floating Action Buttons -->
-  <a href="https://wa.me/919952242624?text=Hi%20SYNC%20Team,%20I%20want%20to%20inquire%20about%20your%20services."
-    class="floating_whatsapp" target="_blank" title="Chat on WhatsApp">
+  <!-- Floating Actions -->
+  <a href="https://wa.me/919952242624?text=Hello%20SYNC,%20I%20would%20like%20to%20discuss%20a%20project."
+    class="floating-whatsapp" target="_blank" rel="noopener noreferrer" title="Chat with SYNC">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
-  <a href="tel:+919952242624" class="floating_call" title="Call Us Now">
+  <a href="tel:+919952242624" class="floating-call" title="Call Us Now">
     <i class="fa-solid fa-phone"></i>
   </a>
 
   <!-- Header Navigation -->
   <header>
-    <div class="logo">
-      <img src="Logo.png" alt="SYNC Logo">
-      <div class="logo-text">
-        <h1>SYNC<span></span></h1>
-        <p>Smart Young Next-Gen Coders</p>
-      </div>
-    </div>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="Logo.png" alt="SYNC Logo">
+        <div class="logo-text">
+          <h1>SYNC<span>.</span></h1>
+          <p>Smart Young NextGen Coders</p>
+        </div>
+      </a>
 
-    <div class="mobile-nav-toggle" id="mobileNavToggle">
-      <i class="fa-solid fa-bars"></i>
-    </div>
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-    <nav id="mainNav">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="#" class="header-cta-btn trigger-quote-modal"><i class="fa-solid fa-bolt"></i> Get Quote</a></li>
-      </ul>
-    </nav>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="btn btn-primary trigger-quote-modal">Start a Project</button></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-text">
-      <p class="script-title">Smart Young Next-Gen Coders</p>
-      <h2>We Build <span>Future-Based</span> Websites & Applications</h2>
-      <p>Empowering businesses with high-performance, creative & scalable digital engineering co-founded by <strong>P.
-          Harish Kumar, B.E.</strong></p>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">
+          <i class="fa-solid fa-sparkles"></i> Digital Solutions for Growing Businesses
+        </div>
+        <p class="script-title">Build. Design. Grow.</p>
+        <h1 style="font-size: 3.2rem; margin-top: 10px; margin-bottom: 20px;">Modern websites, powerful web apps and
+          mobile apps built for business.</h1>
+        <p class="description">SYNC helps businesses turn ideas into reliable digital products — from professional
+          websites and custom business software to mobile applications and long-term technical support.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary trigger-quote-modal">Start Your Project</button>
+          <a href="projects.html" class="btn btn-secondary">View Our Work</a>
+        </div>
+      </div>
 
-      <div class="hero-buttons">
-        <a href="services.html" class="btn"><i class="fa-solid fa-rocket"></i> Explore Services</a>
-        <a href="#" class="btn btn-secondary trigger-quote-modal"><i class="fa-solid fa-calendar-check"></i> Request
-          Consultation</a>
+      <div class="hero-visual">
+        <div class="mockup-dashboard">
+          <div class="mockup-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="mockup-body">
+            <div class="mockup-pane">
+              <span style="color: #6366f1;">const</span> sync = {<br>
+              &nbsp;&nbsp;focus: <span style="color: #10b981;">'Business Growth'</span>,<br>
+              &nbsp;&nbsp;stack: [<span style="color: #faa300;">'Web'</span>, <span
+                style="color: #faa300;">'Mobile'</span>, <span style="color: #faa300;">'API'</span>],<br>
+              &nbsp;&nbsp;status: <span style="color: #10b981;">'Ready'</span><br>
+              };<br><br>
+              <span style="color: #a5b4fc;">// Deploying solutions...</span><br>
+              <span style="color: #10b981;">&gt; sync.deploy()</span><br>
+              <span style="color: #3b82f6;">Success: digital product active.</span>
+            </div>
+            <div class="mockup-pane pane-charts">
+              <div class="chart-bar-wrap">
+                <span class="chart-bar-label">Productivity Increased</span>
+                <div class="chart-bar">
+                  <div class="chart-bar-inner" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="chart-bar-wrap">
+                <span class="chart-bar-label">Database Queries Latency</span>
+                <div class="chart-bar">
+                  <div class="chart-bar-inner" style="width: 25%; background: var(--accent-grad);"></div>
+                </div>
+              </div>
+              <div class="chart-bar-wrap">
+                <span class="chart-bar-label">Design Interactivity Index</span>
+                <div class="chart-bar">
+                  <div class="chart-bar-inner" style="width: 95%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-floating-card">
+          <div class="floating-icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <div>
+            <h4 style="font-size: 0.85rem; margin-bottom: 2px;">Conversion Analytics</h4>
+            <p style="font-size: 0.7rem; color: var(--text-muted); margin: 0;">Optimized Performance</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Section: What We Offer -->
-  <section class="preview-section p-80">
-    <div class="section-title-wrap">
-      <span class="section-badge">Why SYNC</span>
-      <p class="script-title">Innovative Digital Engineering</p>
-      <h2>Transforming Ideas into <span>Digital Reality</span></h2>
-      <p class="section-desc">We deliver full-spectrum software development, cutting-edge web applications, and
-        intuitive UI/UX experiences.</p>
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container trust-flex">
+      <div class="trust-item"><i class="fa-solid fa-code"></i> Web Development</div>
+      <div class="trust-item"><i class="fa-solid fa-laptop-code"></i> Web Applications</div>
+      <div class="trust-item"><i class="fa-solid fa-mobile-button"></i> Mobile Apps</div>
+      <div class="trust-item"><i class="fa-solid fa-wand-magic-sparkles"></i> UI/UX Design</div>
+      <div class="trust-item"><i class="fa-solid fa-cart-shopping"></i> E-Commerce</div>
+      <div class="trust-item"><i class="fa-solid fa-screwdriver-wrench"></i> Maintenance</div>
     </div>
+  </section>
 
-    <div class="preview-container">
-      <div class="preview-card glass-card">
-        <h3><i class="fa-solid fa-laptop-code" style="color: var(--yellow-color);"></i> About SYNC</h3>
-        <p>Discover our core values, expert engineering team, and our commitment to driving digital transformation for
-          client success.</p>
-        <a href="about.html" class="btn btn-secondary">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+  <!-- About Section -->
+  <section id="about" class="p-80">
+    <div class="container about-grid">
+      <div>
+        <span class="section-badge">About SYNC</span>
+        <p class="script-title">Technology Built Around Your Business</p>
+        <h2 style="font-size: 2.2rem; margin-top: 10px; margin-bottom: 20px;">Reliable Digital Transformation Built to
+          Scale</h2>
+        <p style="color: var(--text-muted); margin-bottom: 24px;">SYNC is a digital development company focused on
+          designing and building modern websites, web applications, mobile applications and custom software for
+          businesses and startups.</p>
+        <p style="color: var(--text-muted); margin-bottom: 32px;">We focus on understanding your distinct workflow
+          requirements, crafting clean and responsive code frameworks, delivering user-centered visual designs, and
+          supporting you post-launch with ongoing technical maintenance.</p>
+        <button class="btn btn-primary trigger-quote-modal">Discuss Your Idea</button>
+      </div>
+      <div class="about-stats">
+        <div class="glass-card stat-card">
+          <i class="fa-solid fa-bezier-curve"></i>
+          <h4>Modern Design</h4>
+          <p>Intuitive user interfaces that fit your visual brand.</p>
+        </div>
+        <div class="glass-card stat-card">
+          <i class="fa-solid fa-display"></i>
+          <h4>Responsive Development</h4>
+          <p>Optimized experiences across mobile, tablets, and desktops.</p>
+        </div>
+        <div class="glass-card stat-card">
+          <i class="fa-solid fa-sliders"></i>
+          <h4>Custom Solutions</h4>
+          <p>Tailored logic to automate manual tasks and processes.</p>
+        </div>
+        <div class="glass-card stat-card">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h4>Long-Term Support</h4>
+          <p>Secure updates, performance tuning, and backup checks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions We Build -->
+  <section id="solutions" class="p-80" style="background: rgba(0,0,0,0.01);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Solutions We Build</span>
+        <p class="script-title">Custom Core Business Systems</p>
+        <h2 style="margin-top: 10px;">Solutions for <span>Growing Businesses</span></h2>
+        <p>We build complete, automated workflow systems tailored around your specific business processes.</p>
       </div>
 
-      <div class="preview-card glass-card">
-        <h3><i class="fa-solid fa-layer-group" style="color: var(--yellow-color);"></i> Core Services</h3>
-        <p>From full-stack web platforms and cross-platform mobile apps to custom database architectures and
-          maintenance.</p>
-        <a href="services.html" class="btn">View Services <i class="fa-solid fa-arrow-right"></i></a>
+      <div class="solutions-grid">
+        <div class="glass-card solution-card">
+          <div class="solution-card-header">
+            <i class="fa-solid fa-boxes-stacked"></i>
+            <h4>Inventory Management</h4>
+          </div>
+          <p>Track stock levels, configure reorder levels, and manage multiple storage centers dynamically.</p>
+          <div class="features-tag">Example: Barcode Sync, Supply Alerts</div>
+        </div>
+
+        <div class="glass-card solution-card">
+          <div class="solution-card-header">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+            <h4>Billing & Invoicing</h4>
+          </div>
+          <p>Automate document creation, compute tax adjustments, and sync with local accounting software tools.</p>
+          <div class="features-tag">Example: Automated PDF, Payment Statuses</div>
+        </div>
+
+        <div class="glass-card solution-card">
+          <div class="solution-card-header">
+            <i class="fa-solid fa-users-gear"></i>
+            <h4>CRM Platforms</h4>
+          </div>
+          <p>Track client communication milestones, save documents, and distribute leads to agents.</p>
+          <div class="features-tag">Example: Sales Pipelines, Communication Logs</div>
+        </div>
+
+        <div class="glass-card solution-card">
+          <div class="solution-card-header">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h4>Appointment Booking</h4>
+          </div>
+          <p>Allow clients to select open slots, sync doctors or staff availability tables, and send reminders.</p>
+          <div class="features-tag">Example: Auto-reminders, Matrix Sync</div>
+        </div>
       </div>
 
-      <div class="preview-card glass-card">
-        <h3><i class="fa-solid fa-headset" style="color: var(--yellow-color);"></i> Direct Contact</h3>
-        <p>Ready to kickstart your next project? Get in touch with lead engineer P. Harish Kumar for custom project
-          estimations.</p>
-        <a href="contact.html" class="btn btn-red">Contact Us <i class="fa-solid fa-envelope"></i></a>
+      <div class="solutions-cta">
+        <p style="margin-bottom: 20px; color: var(--text-muted);">Need a custom management panel, dashboard, or workflow
+          app?</p>
+        <button class="btn btn-accent trigger-quote-modal"><i class="fa-solid fa-comments"></i> Discuss Your Project
+          Idea</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="p-80">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Development Process</span>
+        <p class="script-title">From Idea to Launch</p>
+        <h2 style="margin-top: 10px;">Our <span>Work Process</span></h2>
+        <p>A structured, milestone-driven approach ensuring transparency and quality at every step.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item left-item">
+          <div class="timeline-content glass-card">
+            <div class="timeline-step">Step 01</div>
+            <h3>Discover</h3>
+            <p>We analyze your target business goals, research user personas, and document feature requirements.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right-item">
+          <div class="timeline-content glass-card">
+            <div class="timeline-step">Step 02</div>
+            <h3>Plan</h3>
+            <p>Define project architecture constraints, technology stacks, sprint delivery timelines, and budget scope.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item left-item">
+          <div class="timeline-content glass-card">
+            <div class="timeline-step">Step 03</div>
+            <h3>Design</h3>
+            <p>Draft user journey wireframes and pixel-perfect high-fidelity visual mockups in Figma.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right-item">
+          <div class="timeline-content glass-card">
+            <div class="timeline-step">Step 04</div>
+            <h3>Develop</h3>
+            <p>Engineer clean, maintainable backend services and responsive client views adhering to modern design
+              principles.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left-item">
+          <div class="timeline-content glass-card">
+            <div class="timeline-step">Step 05</div>
+            <h3>Test</h3>
+            <p>Execute functional reviews, cross-browser responsive tests, performance tuning, and database sanity
+              checks.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right-item">
+          <div class="timeline-content glass-card">
+            <div class="timeline-step">Step 06</div>
+            <h3>Launch</h3>
+            <p>Configure production domains, activate servers, run secure audits, and verify application live
+              performance.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left-item">
+          <div class="timeline-content glass-card">
+            <div class="timeline-step">Step 07</div>
+            <h3>Support</h3>
+            <p>Deliver monthly backups, check patch updates, optimize code, and scale database schemas as you grow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Summary & Care -->
+  <section id="pricing" class="p-80" style="background: rgba(0,0,0,0.01); border-top: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Pricing Plans</span>
+        <p class="script-title">Investment Categories</p>
+        <h2 style="margin-top: 10px;">Flexible <span>Pricing Structure</span></h2>
+        <p>Investment options tailored around project scale, complexity, and specific workflow parameters.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="glass-card pricing-card">
+          <h3>Website Development</h3>
+          <div class="price">Starting from ₹20,000</div>
+          <p class="desc">Corporate landing sites, corporate directories, service pages, and portfolio pages designed
+            for high lead conversion.</p>
+          <button class="btn btn-secondary trigger-quote-modal" style="width: 100%;">Request Quote</button>
+        </div>
+
+        <div class="glass-card pricing-card">
+          <h3>Web Application</h3>
+          <div class="price">Starting from ₹45,000</div>
+          <p class="desc">Custom database integrations, analytics dashboards, employee tracking platforms, and
+            automation tools.</p>
+          <button class="btn btn-secondary trigger-quote-modal" style="width: 100%;">Request Quote</button>
+        </div>
+
+        <div class="glass-card pricing-card">
+          <h3>Mobile Application</h3>
+          <div class="price">Starting from ₹60,000</div>
+          <p class="desc">Cross-platform Android interfaces, customer apps, authentication features, and background API
+            services.</p>
+          <button class="btn btn-secondary trigger-quote-modal" style="width: 100%;">Request Quote</button>
+        </div>
+
+        <div class="glass-card pricing-card">
+          <h3>SYNC Care Plans</h3>
+          <div class="price">Monthly options</div>
+          <p class="desc">Security updates, error remediation, continuous backups, page tuning, database optimization,
+            and support hours.</p>
+          <button class="btn btn-secondary trigger-quote-modal" style="width: 100%;">Request Quote</button>
+        </div>
+      </div>
+      <p class="pricing-note">Prices depend on project requirements, features and complexity.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials Placeholder -->
+  <section class="p-80">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Testimonials</span>
+        <p class="script-title">What Our Clients Say</p>
+      </div>
+      <div class="testimonials-placeholder">
+        "Client testimonials will appear here as SYNC completes more projects."
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="p-80" style="background: rgba(0,0,0,0.01);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">FAQ</span>
+        <p class="script-title">Frequently Asked Questions</p>
+        <h2 style="margin-top: 10px;">Find <span>Answers Here</span></h2>
+        <p>Find quick answers about our processes, tech integration, pricing plans, and maintenance support.</p>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-item">
+          <div class="faq-question">What type of websites do you build? <i class="fa-solid fa-chevron-down"></i></div>
+          <div class="faq-answer">
+            <p>We build professional business websites, landing pages, corporate portals, directories, and customized
+              e-commerce systems tailored to convert users into customers.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Can you build a custom web application for my business? <i
+              class="fa-solid fa-chevron-down"></i></div>
+          <div class="faq-answer">
+            <p>Yes, we build bespoke management panels, inventory trackers, billing solutions, customer portals, CRM
+              dashboards, and school or medical booking services designed around your exact workflows.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Do you develop Android mobile applications? <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we engineer customer-facing and internal corporate Android applications using modern API
+              integrations, user authentication protocols, and push alerts.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Do you provide website maintenance? <i class="fa-solid fa-chevron-down"></i></div>
+          <div class="faq-answer">
+            <p>Yes, we offer recurring support packages under SYNC Care for updates, bug remediation, security patches,
+              performance scaling, and cloud deployment audits.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How does pricing work? <i class="fa-solid fa-chevron-down"></i></div>
+          <div class="faq-answer">
+            <p>Pricing is based on feature requirements and timeline constraints. We quote starting prices for simple
+              websites, custom web tools, or mobile apps and provide structured project milestones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Form -->
+  <section id="contact" class="p-80">
+    <div class="container contact-section-grid">
+      <div class="contact-meta">
+        <div>
+          <span class="section-badge">Contact Us</span>
+          <p class="script-title">Get In Touch</p>
+          <h2 style="font-size: 2.2rem; margin-top: 10px; margin-bottom: 16px;">Have a Project in Mind?</h2>
+          <p style="color: var(--text-muted);">Tell us what you're planning. We'll help you choose the right digital
+            solution and provide a detailed quote analysis.</p>
+        </div>
+
+        <div class="contact-info-panel">
+          <div class="contact-info-item">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email Inquiry</h4>
+              <p><a href="mailto:harishhari3045@gmail.com">harishhari3045@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Call or WhatsApp Us</h4>
+              <p><a href="tel:+919952242624">+91 99522 42624</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card">
+        <form id="mainLeadForm" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="business_name">Business Name</label>
+              <input type="text" id="business_name" name="business" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp *</label>
+              <input type="tel" id="phone" name="phone" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="project_type">Project Type *</label>
+              <select id="project_type" name="project_type" class="form-control" required>
+                <option value="Website">Website Development</option>
+                <option value="Web Application">Web Application</option>
+                <option value="Mobile Application">Mobile Application</option>
+                <option value="E-Commerce">E-Commerce Development</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Maintenance">Website Maintenance</option>
+                <option value="Bug Fixing">Bug Fixing</option>
+                <option value="API Integration">API Integration</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget" class="form-control">
+                <option value="Under ₹10,000">Under ₹10,000</option>
+                <option value="₹10,000 – ₹25,000">₹10,000 – ₹25,000</option>
+                <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
+                <option value="₹50,000 – ₹1,00,000">₹50,000 – ₹1,00,000</option>
+                <option value="₹1,00,000+">₹1,00,000+</option>
+                <option value="Not sure">Not sure / Custom Discussion</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Project Description *</label>
+            <textarea id="message" name="description" class="form-control" rows="5"
+              placeholder="Briefly describe what you're planning, key features, and timeline hopes..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Request a Quote</button>
+
+          <div style="text-align: center; margin-top: 10px;">
+            <span style="color: var(--text-muted); font-size: 0.85rem;">Or connect instantly:</span><br>
+            <a href="https://wa.me/919952242624?text=Hello%20SYNC,%20I%20would%20like%20to%20discuss%20a%20project."
+              class="btn btn-secondary" style="margin-top: 8px; width: 100%; border-color: rgba(37, 211, 102, 0.4);"
+              target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i> Chat with SYNC
+            </a>
+          </div>
+        </form>
+        <div id="mainFormMessage" class="form-message"></div>
       </div>
     </div>
   </section>
@@ -120,47 +550,51 @@
     <div class="modal-card">
       <div class="modal-close" id="closeQuoteModal">&times;</div>
       <div class="modal-header">
-        <p class="script-title">Get In Touch</p>
         <h3>Request a Free Quote</h3>
-        <p>Tell us about your project requirements and we will send you a tailored estimate within 24 hours.</p>
+        <p>Tell us about your project requirements and we will send you a tailored estimate.</p>
       </div>
 
-      <form id="modalQuoteForm">
+      <form id="modalQuoteForm" class="contact-form">
         <div class="form-group">
-          <label for="modal_name"><i class="fa-solid fa-user"></i> Full Name</label>
-          <input type="text" id="modal_name" class="form-control" placeholder="Enter your full name" required>
+          <label for="modal_name">Full Name *</label>
+          <input type="text" id="modal_name" name="name" class="form-control" placeholder="Enter your full name"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_phone"><i class="fa-solid fa-phone"></i> Phone / Mobile Number</label>
-          <input type="tel" id="modal_phone" class="form-control" placeholder="Enter your mobile number" required>
+          <label for="modal_phone">Phone / WhatsApp *</label>
+          <input type="tel" id="modal_phone" name="phone" class="form-control" placeholder="Enter your contact number"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_email"><i class="fa-solid fa-envelope"></i> Email Address</label>
-          <input type="email" id="modal_email" class="form-control" placeholder="Enter your email address" required>
+          <label for="modal_email">Email Address *</label>
+          <input type="email" id="modal_email" name="email" class="form-control" placeholder="name@company.com"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_service"><i class="fa-solid fa-list-check"></i> Service Required</label>
-          <select id="modal_service" class="form-control" required>
-            <option value="Web Development">Web Development</option>
-            <option value="Mobile App Development">Mobile App Development</option>
-            <option value="Freelance Consultation">Freelancing Solutions</option>
+          <label for="modal_service">Service Required *</label>
+          <select id="modal_service" name="project_type" class="form-control" required>
+            <option value="Website">Website Development</option>
+            <option value="Web Application">Web Application</option>
+            <option value="Mobile Application">Mobile Application</option>
+            <option value="E-Commerce">E-Commerce Development</option>
             <option value="UI/UX Design">UI/UX Design</option>
-            <option value="Full Stack Project">Full Stack Development</option>
-            <option value="Web Maintenance">Web Maintenance & Hosting</option>
+            <option value="Maintenance">Website Maintenance</option>
+            <option value="Bug Fixing">Bug Fixing</option>
+            <option value="API Integration">API Integration</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="modal_message"><i class="fa-solid fa-message"></i> Project Details</label>
-          <textarea id="modal_message" class="form-control" rows="2"
-            placeholder="Briefly describe your project goals..." required></textarea>
+          <label for="modal_message">Project Details *</label>
+          <textarea id="modal_message" name="description" class="form-control" rows="3"
+            placeholder="Briefly describe your goals..." required></textarea>
         </div>
 
-        <button type="submit" class="btn" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send Quote
-          Request</button>
+        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send
+          Quote Request</button>
       </form>
       <div id="modalFormMessage" class="form-message"></div>
     </div>
@@ -168,35 +602,61 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="Logo.png" alt="SYNC Logo">
-        <div>
-          <h3>SYNC</h3>
-          <p>Smart Young Next-Gen Coders</p>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>SYNC<span>.</span></h3>
+        <p>Digital Solutions for Growing Businesses</p>
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/harishkumar-234" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
 
-      <ul class="footer-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Featured Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
 
-      <div class="social-icons">
-        <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn"><i
-            class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/harishkumar-234" target="_blank" class="social-icon" title="GitHub"><i
-            class="fa-brands fa-github"></i></a>
-        <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram"><i
-            class="fa-brands fa-instagram"></i></a>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Business Websites</a></li>
+          <li><a href="services.html">Web Applications</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">E-Commerce</a></li>
+          <li><a href="services.html">UI/UX Design</a></li>
+          <li><a href="services.html">Maintenance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: <a href="mailto:harishhari3045@gmail.com"
+              style="color: var(--text-primary);">harishhari3045@gmail.com</a></li>
+          <li>WhatsApp: <a href="https://wa.me/919952242624" style="color: var(--text-primary);">+91 99522 42624</a>
+          </li>
+        </ul>
       </div>
     </div>
 
-    <p class="copyright">© 2025 SYNC - Smart Young Next-Gen Coders. Co-founded by P. Harish Kumar, B.E. All rights
-      reserved.</p>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 SYNC. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
