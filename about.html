@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - SYNC | Smart Young Next-Gen Coders</title>
+  <title>SYNC | Smart Young NextGen Coders</title>
   <meta name="description"
-    content="Learn about SYNC co-founded by P. Harish Kumar, B.E., our team, vision, mission, and dedication to modern software engineering.">
+    content="Learn about SYNC co-founded by P. Harish Kumar, B.E., our core values, expert engineering team, and our commitment to building modern, reliable software.">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -27,112 +28,203 @@
     <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i> Get Quote
   </div>
 
-  <!-- Floating Action Buttons -->
-  <a href="https://wa.me/919952242624?text=Hi%20SYNC%20Team,%20I%20want%20to%20inquire%20about%20your%20services."
-    class="floating_whatsapp" target="_blank" title="Chat on WhatsApp">
+  <!-- Floating Actions -->
+  <a href="https://wa.me/919952242624?text=Hello%20SYNC,%20I%20would%20like%20to%20discuss%20a%20project."
+    class="floating-whatsapp" target="_blank" rel="noopener noreferrer" title="Chat with SYNC">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
-  <a href="tel:+919952242624" class="floating_call" title="Call Us Now">
+  <a href="tel:+919952242624" class="floating-call" title="Call Us Now">
     <i class="fa-solid fa-phone"></i>
   </a>
 
   <!-- Header Navigation -->
   <header>
-    <div class="logo">
-      <img src="Logo.png" alt="SYNC Logo">
-      <div class="logo-text">
-        <h1>SYNC<span>.</span></h1>
-        <p>Smart Young Next-Gen Coders</p>
-      </div>
-    </div>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="Logo.png" alt="SYNC Logo">
+        <div class="logo-text">
+          <h1>SYNC<span>.</span></h1>
+          <p>Smart Young NextGen Coders</p>
+        </div>
+      </a>
 
-    <div class="mobile-nav-toggle" id="mobileNavToggle">
-      <i class="fa-solid fa-bars"></i>
-    </div>
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-    <nav id="mainNav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="#" class="header-cta-btn trigger-quote-modal"><i class="fa-solid fa-bolt"></i> Get Quote</a></li>
-      </ul>
-    </nav>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="btn btn-primary trigger-quote-modal">Start a Project</button></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- About Section -->
-  <section class="about-section p-80">
-    <div class="section-title-wrap">
+  <!-- Inner Page Banner -->
+  <section class="p-80"
+    style="padding-top: 140px; border-bottom: 1px solid var(--border-color); background: rgba(12, 16, 29, 0.2);">
+    <div class="container" style="text-align: center;">
       <span class="section-badge">Who We Are</span>
-      <p class="script-title">Our Identity & Mission</p>
-      <h2>About <span>SYNC</span></h2>
-      <p class="section-desc">Empowering organizations with next-generation web technologies, creative design, and
-        robust code engineering.</p>
+      <h1 style="font-size: 3rem; margin-bottom: 16px;">Technology Built Around Your Business</h1>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">SYNC co-founders engineer next-generation
+        web architectures and custom workflows to empower growing companies.</p>
     </div>
+  </section>
 
-    <div class="about-intro-grid">
-      <div class="glass-card about-text-content">
-        <h3><i class="fa-solid fa-lightbulb" style="color: var(--yellow-color);"></i> Building the Future of Web &
-          Software</h3>
-        <p>
-          <strong>SYNC (Smart Young Next-Gen Coders)</strong> is an innovative technology company co-founded by
-          <strong>P. Harish Kumar, B.E.</strong> with a mission to engineer scalable, high-speed, and aesthetically
-          stunning digital applications.
-        </p>
-        <p>
-          We specialize in custom web solutions, mobile app architectures, end-to-end full-stack development, and
-          professional freelancing services tailored for businesses, startups, and enterprises worldwide.
-        </p>
-      </div>
+  <!-- Identity Details -->
+  <section class="p-80">
+    <div class="container about-grid">
+      <div>
+        <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Dedicated to Digital Transformation</h2>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">SYNC is a digital development company focused on
+          designing and building modern websites, web applications, mobile applications and custom software for
+          businesses and startups.</p>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">Rather than using templates or standard cookie-cutter
+          layouts, we prioritize custom engineering built directly around your organization's goals. We ensure your data
+          systems, user flows, and integrations function together reliably.</p>
 
-      <div class="glass-card about-text-content">
-        <h3><i class="fa-solid fa-bullseye" style="color: var(--yellow-color);"></i> Vision & Core Values</h3>
-        <ul class="values-list">
-          <li><i class="fa-solid fa-circle-check"></i> <strong>Innovation:</strong> Embracing cutting-edge technology &
-            creative design</li>
-          <li><i class="fa-solid fa-circle-check"></i> <strong>Quality:</strong> Uncompromising standards in software
-            architecture</li>
-          <li><i class="fa-solid fa-circle-check"></i> <strong>Client Success:</strong> Crafting solutions that generate
-            measurable value</li>
-          <li><i class="fa-solid fa-circle-check"></i> <strong>Agility:</strong> Delivering rapid turnarounds and
-            seamless updates</li>
+        <h4 style="margin-bottom: 12px; font-size: 1.1rem; color: var(--primary-color);">Our Core Approach:</h4>
+        <ul
+          style="list-style: none; display: flex; flex-direction: column; gap: 8px; color: var(--text-muted); font-size: 0.9rem;">
+          <li><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i>
+            <strong>Understanding business requirements:</strong> We mapping specifications before code.
+          </li>
+          <li><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Designing
+              intuitive experiences:</strong> Responsive dashboards and interfaces.</li>
+          <li><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Building
+              reliable software:</strong> Structured database frameworks and safe modules.</li>
+          <li><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i>
+            <strong>Delivering responsive solutions:</strong> High speed across all screen viewports.
+          </li>
+          <li><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Providing
+              post-launch support:</strong> Real-time debugging and security audits.</li>
         </ul>
       </div>
-    </div>
 
-    <div class="section-title-wrap" style="margin-top: 60px;">
-      <span class="section-badge">Our Experts</span>
-      <p class="script-title">Passionate Engineers & Designers</p>
-      <h2>Meet The <span>SYNC Team</span></h2>
-    </div>
-
-    <div class="team-container">
-      <div class="glass-card team-member">
-        <div class="icon-box"><i class="fa-solid fa-user-tie"></i></div>
-        <h4>P. Harish Kumar, B.E.</h4>
-        <div class="role">Founder & Lead Software Engineer</div>
-        <p>Expertise in Full Stack Engineering, Solution Architecture, UI/UX Design, and Product Management.</p>
-      </div>
-
-      <div class="glass-card team-member">
-        <div class="icon-box"><i class="fa-solid fa-user-tie"></i></div>
-        <h4>S. Kathiravan</h4>
-        <div class="role">Co - Founder</div>
-        <p>Expertise: HTML, CSS, JAVASCRIPT, PHP, MYSQL, Mobile App Development, Database Management.</p>
-      </div>
-
-      <div class="glass-card team-member">
-        <div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div>
-        <h4>UI/UX Creative Designers</h4>
-        <div class="role">Design Strategists</div>
-        <p>Crafting intuitive user interfaces, visual design systems, brand identities, and responsive layouts.</p>
+      <div class="about-stats">
+        <div class="glass-card stat-card">
+          <i class="fa-solid fa-bezier-curve"></i>
+          <h4>Modern Design</h4>
+          <p>Clean aesthetics that represent your brand authority.</p>
+        </div>
+        <div class="glass-card stat-card">
+          <i class="fa-solid fa-display"></i>
+          <h4>Responsive Development</h4>
+          <p>Highly optimized browser presentation on mobile layouts.</p>
+        </div>
+        <div class="glass-card stat-card">
+          <i class="fa-solid fa-sliders"></i>
+          <h4>Custom Solutions</h4>
+          <p>No generic logic. Built strictly for your database tasks.</p>
+        </div>
+        <div class="glass-card stat-card">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h4>Long-Term Support</h4>
+          <p>Ongoing maintenance to keep platforms secure and fast.</p>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div style="text-align: center; margin-top: 50px;">
-      <a href="contact.html" class="btn"><i class="fa-solid fa-comments"></i> Start A Conversation</a>
+  <!-- Mission & Vision -->
+  <section class="p-80" style="border-top: 1px solid var(--border-color); background: rgba(12, 16, 29, 0.15);">
+    <div class="container">
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 1000px; margin: 0 auto;">
+
+        <!-- Our Mission -->
+        <div class="glass-card"
+          style="padding: 40px 30px; text-align: left; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; transition: transform 0.3s ease;">
+          <div
+            style="width: 50px; height: 50px; border-radius: 12px; background: rgba(239, 49, 0, 0.1); display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-size: 1.5rem; border: 1px solid rgba(239, 49, 0, 0.2);">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3 style="font-size: 1.5rem; font-weight: 600;">Our <span style="color: var(--primary-color);">Mission</span>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">
+            At SYNC, our mission is to transform ideas and business challenges into meaningful digital solutions. We
+            design and develop modern websites, powerful web applications, mobile apps and custom software that are
+            reliable, user-friendly and built around real business needs.</br></br>
+            We aim to make technology simple, accessible and valuable for businesses of every size by combining
+            thoughtful design, innovative technology and dependable support. Our goal is not just to deliver a project,
+            but to build long-term digital solutions that help our clients operate better, connect with their customers
+            and grow with confidence.
+          </p>
+        </div>
+
+        <!-- Our Vision -->
+        <div class="glass-card"
+          style="padding: 40px 30px; text-align: left; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; transition: transform 0.3s ease;">
+          <div
+            style="width: 50px; height: 50px; border-radius: 12px; background: rgba(250, 163, 0, 0.1); display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.5rem; border: 1px solid rgba(250, 163, 0, 0.2);">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3 style="font-size: 1.5rem; font-weight: 600;">Our <span style="color: var(--accent-color);">Vision</span>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">
+            Our vision is to become a trusted digital technology partner for businesses and startups, helping them build
+            a stronger and smarter digital future.</br></br>
+            We aspire to create innovative, scalable and accessible digital solutions that enable businesses to Build,
+            Design and Grow. Through continuous learning, creativity and technology, SYNC aims to turn ideas into
+            impactful digital experiences and become a reliable partner throughout our clients' digital journey.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Members -->
+  <section class="p-80"
+    style="background: rgba(12, 16, 29, 0.3); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Our Founders</span>
+        <h2>Meet the <span>Engineering Team</span></h2>
+        <p>Passionate software engineers co-founding solutions to streamline operations and growth.</p>
+      </div>
+
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; justify-content: center; max-width: 800px; margin: 0 auto;">
+        <!-- Founder 1 -->
+        <div class="glass-card" style="text-align: center;">
+          <img src="Founder.png" alt="P. Harish Kumar"
+            style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; object-position: center 15%; border: 3px solid var(--primary-color); margin-bottom: 20px; box-shadow: 0 4px 15px rgba(239, 49, 0, 0.15);">
+          <h3 style="font-size: 1.3rem; margin-bottom: 6px;">P. Harish Kumar, B.E.</h3>
+          <p
+            style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 16px; letter-spacing: 1px;">
+            Founder & Lead Software Engineer</p>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Expertise in Full Stack Engineering, Solution
+            Architecture, UI/UX Design, and Product Management.</p>
+        </div>
+
+        <!-- Founder 2 -->
+        <div class="glass-card" style="text-align: center;">
+          <img src="Co-Founder.jpeg" alt="S. Kathiravan"
+            style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 3px solid var(--accent-color); margin-bottom: 20px; box-shadow: 0 4px 15px rgba(250, 163, 0, 0.15);">
+          <h3 style="font-size: 1.3rem; margin-bottom: 6px;">S. Kathiravan, B.E.</h3>
+          <p
+            style="color: var(--accent-color); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 16px; letter-spacing: 1px;">
+            Co-Founder</p>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Expertise: HTML, CSS, JavaScript, PHP, MySQL, Mobile
+            App Development, and Database Management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action block -->
+  <section class="p-80">
+    <div class="container" style="text-align: center; max-width: 600px;">
+      <h2 style="margin-bottom: 16px; font-size: 2.2rem;">Ready to build a reliable solution?</h2>
+      <p style="color: var(--text-muted); margin-bottom: 32px;">Connect with our founders directly. Let us walk you
+        through a customized plan for your website, database systems, or mobile integrations.</p>
+      <button class="btn btn-primary trigger-quote-modal">Start Your Project</button>
     </div>
   </section>
 
@@ -141,47 +233,51 @@
     <div class="modal-card">
       <div class="modal-close" id="closeQuoteModal">&times;</div>
       <div class="modal-header">
-        <p class="script-title">Get In Touch</p>
         <h3>Request a Free Quote</h3>
-        <p>Tell us about your project requirements and we will send you a tailored estimate within 24 hours.</p>
+        <p>Tell us about your project requirements and we will send you a tailored estimate.</p>
       </div>
 
-      <form id="modalQuoteForm">
+      <form id="modalQuoteForm" class="contact-form">
         <div class="form-group">
-          <label for="modal_name"><i class="fa-solid fa-user"></i> Full Name</label>
-          <input type="text" id="modal_name" class="form-control" placeholder="Enter your full name" required>
+          <label for="modal_name">Full Name *</label>
+          <input type="text" id="modal_name" name="name" class="form-control" placeholder="Enter your full name"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_phone"><i class="fa-solid fa-phone"></i> Phone / Mobile Number</label>
-          <input type="tel" id="modal_phone" class="form-control" placeholder="Enter your mobile number" required>
+          <label for="modal_phone">Phone / WhatsApp *</label>
+          <input type="tel" id="modal_phone" name="phone" class="form-control" placeholder="Enter your contact number"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_email"><i class="fa-solid fa-envelope"></i> Email Address</label>
-          <input type="email" id="modal_email" class="form-control" placeholder="Enter your email address" required>
+          <label for="modal_email">Email Address *</label>
+          <input type="email" id="modal_email" name="email" class="form-control" placeholder="name@company.com"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_service"><i class="fa-solid fa-list-check"></i> Service Required</label>
-          <select id="modal_service" class="form-control" required>
-            <option value="Web Development">Web Development</option>
-            <option value="Mobile App Development">Mobile App Development</option>
-            <option value="Freelance Consultation">Freelancing Solutions</option>
+          <label for="modal_service">Service Required *</label>
+          <select id="modal_service" name="project_type" class="form-control" required>
+            <option value="Website">Website Development</option>
+            <option value="Web Application">Web Application</option>
+            <option value="Mobile Application">Mobile Application</option>
+            <option value="E-Commerce">E-Commerce Development</option>
             <option value="UI/UX Design">UI/UX Design</option>
-            <option value="Full Stack Project">Full Stack Development</option>
-            <option value="Web Maintenance">Web Maintenance & Hosting</option>
+            <option value="Maintenance">Website Maintenance</option>
+            <option value="Bug Fixing">Bug Fixing</option>
+            <option value="API Integration">API Integration</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="modal_message"><i class="fa-solid fa-message"></i> Project Details</label>
-          <textarea id="modal_message" class="form-control" rows="2"
-            placeholder="Briefly describe your project goals..." required></textarea>
+          <label for="modal_message">Project Details *</label>
+          <textarea id="modal_message" name="description" class="form-control" rows="3"
+            placeholder="Briefly describe your goals..." required></textarea>
         </div>
 
-        <button type="submit" class="btn" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send Quote
-          Request</button>
+        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send
+          Quote Request</button>
       </form>
       <div id="modalFormMessage" class="form-message"></div>
     </div>
@@ -189,35 +285,61 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="Logo.png" alt="SYNC Logo">
-        <div>
-          <h3>SYNC</h3>
-          <p>Smart Young Next-Gen Coders</p>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>SYNC<span>.</span></h3>
+        <p>Digital Solutions for Growing Businesses</p>
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/harishkumar-234" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
 
-      <ul class="footer-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Featured Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
 
-      <div class="social-icons">
-        <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn"><i
-            class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/harishkumar-234" target="_blank" class="social-icon" title="GitHub"><i
-            class="fa-brands fa-github"></i></a>
-        <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram"><i
-            class="fa-brands fa-instagram"></i></a>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Business Websites</a></li>
+          <li><a href="services.html">Web Applications</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">E-Commerce</a></li>
+          <li><a href="services.html">UI/UX Design</a></li>
+          <li><a href="services.html">Maintenance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: <a href="mailto:harishhari3045@gmail.com"
+              style="color: var(--text-primary);">harishhari3045@gmail.com</a></li>
+          <li>WhatsApp: <a href="https://wa.me/919952242624" style="color: var(--text-primary);">+91 99522 42624</a>
+          </li>
+        </ul>
       </div>
     </div>
 
-    <p class="copyright">© 2025 SYNC - Smart Young Next-Gen Coders. Co-founded by P. Harish Kumar, B.E. All rights
-      reserved.</p>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 SYNC. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
