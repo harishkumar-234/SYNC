@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - SYNC | Get In Touch</title>
-  <meta name="description" content="Contact SYNC and P. Harish Kumar, B.E. for web development, app engineering, freelancing, and digital consultations.">
-  
+  <title>SYNC | Smart Young NextGen Coders</title>
+  <meta name="description"
+    content="Connect with SYNC and founders P. Harish Kumar, B.E. and S. Kathiravan to schedule a project consultation or request a custom system build estimate.">
+
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- EmailJS SDK -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function() {
-      emailjs.init("N6AnILszKcdiZRXnG");
-    })();
-  </script>
 </head>
+
 <body>
 
   <!-- Preloader -->
@@ -32,128 +28,171 @@
     <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i> Get Quote
   </div>
 
-  <!-- Floating Action Buttons -->
-  <a href="https://wa.me/919952242624?text=Hi%20SYNC%20Team,%20I%20want%20to%20inquire%20about%20your%20services." class="floating_whatsapp" target="_blank" title="Chat on WhatsApp">
+  <!-- Floating Actions -->
+  <a href="https://wa.me/919952242624?text=Hello%20SYNC,%20I%20would%20like%20to%20discuss%20a%20project."
+    class="floating-whatsapp" target="_blank" rel="noopener noreferrer" title="Chat with SYNC">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
-  <a href="tel:+919952242624" class="floating_call" title="Call Us Now">
+  <a href="tel:+919952242624" class="floating-call" title="Call Us Now">
     <i class="fa-solid fa-phone"></i>
   </a>
 
   <!-- Header Navigation -->
   <header>
-    <div class="logo">
-      <img src="Logo.png" alt="SYNC Logo">
-      <div class="logo-text">
-        <h1>SYNC<span>.</span></h1>
-        <p>Smart Young Next-Gen Coders</p>
-      </div>
-    </div>
-    
-    <div class="mobile-nav-toggle" id="mobileNavToggle">
-      <i class="fa-solid fa-bars"></i>
-    </div>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="Logo.png" alt="SYNC Logo">
+        <div class="logo-text">
+          <h1>SYNC<span>.</span></h1>
+          <p>Smart Young NextGen Coders</p>
+        </div>
+      </a>
 
-    <nav id="mainNav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-        <li><a href="#" class="header-cta-btn trigger-quote-modal"><i class="fa-solid fa-bolt"></i> Get Quote</a></li>
-      </ul>
-    </nav>
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><button class="btn btn-primary trigger-quote-modal">Start a Project</button></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Contact Section -->
-  <section class="contact-section p-80">
-    <div class="section-title-wrap">
+  <!-- Inner Page Banner -->
+  <section class="p-80"
+    style="padding-top: 140px; border-bottom: 1px solid var(--border-color); background: rgba(12, 16, 29, 0.2);">
+    <div class="container" style="text-align: center;">
       <span class="section-badge">Get In Touch</span>
-      <p class="script-title">We'd Love To Hear From You</p>
-      <h2>Contact <span>SYNC</span></h2>
-      <p class="section-desc">Have a question or a project proposal? Connect directly with our lead engineering team.</p>
+      <h1 style="font-size: 3rem; margin-bottom: 16px;">Have a Project in Mind?</h1>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Tell us what you're planning. We will help
+        you choose the right digital solution and coordinate estimates within 24 hours.</p>
     </div>
+  </section>
 
-    <div class="contact-grid">
-      
-      <!-- Contact Info Box -->
-      <div class="glass-card contact-info">
-        <h3>Contact Details</h3>
+  <!-- Contact Form & Info Panel -->
+  <section class="p-80">
+    <div class="container contact-section-grid">
+      <div class="contact-meta">
+        <div class="glass-card" style="padding: 32px;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 24px;">Direct Contact Details</h3>
 
-        <div class="contact-item-box">
-          <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
-          <div>
-            <h4>Lead Founder</h4>
-            <p>P. Harish Kumar, B.E.</p>
+          <div class="contact-info-panel">
+            <div class="contact-info-item">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Email Address</h4>
+                <p><a href="mailto:harishhari3045@gmail.com">harishhari3045@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Call / WhatsApp</h4>
+                <p><a href="tel:+919952242624">+91 99522 42624</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h4>Working Hours</h4>
+                <p style="margin: 0;">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                <p style="margin: 0;">Saturday: 10:00 AM - 4:00 PM</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="contact-item-box">
-          <div class="icon"><i class="fa-solid fa-phone"></i></div>
-          <div>
-            <h4>Mobile / Phone</h4>
-            <p><a href="tel:+919952242624" style="color: inherit;">+91 99522 42624</a></p>
-          </div>
-        </div>
-
-        <div class="contact-item-box">
-          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-          <div>
-            <h4>Email Address</h4>
-            <p><a href="mailto:harishhari3045@gmail.com" style="color: inherit;">harishhari3045@gmail.com</a></p>
-          </div>
-        </div>
-
-        <div class="contact-item-box">
-          <div class="icon"><i class="fa-solid fa-clock"></i></div>
-          <div>
-            <h4>Working Hours</h4>
-            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
-            <p>Saturday: 10:00 AM - 4:00 PM</p>
-          </div>
-        </div>
-
-        <div class="social-links">
-          <h4>Connect With Us</h4>
-          <div class="social-icons">
-            <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/harishkumar-234" target="_blank" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/919952242624" target="_blank" class="social-icon" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-          </div>
+        <div class="glass-card" style="padding: 32px;">
+          <h3 style="font-size: 1.1rem; margin-bottom: 12px;">Co-Founded by:</h3>
+          <p style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 6px; font-weight: 600;">P. Harish
+            Kumar, B.E. & S. Kathiravan, B.E.</p>
+          <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">SYNC co-founders provide technical
+            solution architecture planning, reliable code testing, and database designs tailored for startups and
+            businesses.</p>
         </div>
       </div>
 
-      <!-- Contact Form Card -->
-      <div class="glass-card contact-form-card">
-        <h3>Send Us A Message</h3>
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
-            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+      <div class="glass-card">
+        <h3 style="font-size: 1.4rem; margin-bottom: 24px;">Submit a Quote Request</h3>
+        <form id="mainLeadForm" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="business_name">Business Name</label>
+              <input type="text" id="business_name" name="business" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp *</label>
+              <input type="tel" id="phone" name="phone" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="project_type">Project Type *</label>
+              <select id="project_type" name="project_type" class="form-control" required>
+                <option value="Website">Website Development</option>
+                <option value="Web Application">Web Application</option>
+                <option value="Mobile Application">Mobile Application</option>
+                <option value="E-Commerce">E-Commerce Development</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Maintenance">Website Maintenance</option>
+                <option value="Bug Fixing">Bug Fixing</option>
+                <option value="API Integration">API Integration</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget" class="form-control">
+                <option value="Under ₹10,000">Under ₹10,000</option>
+                <option value="₹10,000 – ₹25,000">₹10,000 – ₹25,000</option>
+                <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
+                <option value="₹50,000 – ₹1,00,000">₹50,000 – ₹1,00,000</option>
+                <option value="₹1,00,000+">₹1,00,000+</option>
+                <option value="Not sure">Not sure / Custom Discussion</option>
+              </select>
+            </div>
           </div>
 
           <div class="form-group">
-            <label for="email"><i class="fa-solid fa-envelope"></i> Your Email</label>
-            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            <label for="message">Project Description *</label>
+            <textarea id="message" name="description" class="form-control" rows="5"
+              placeholder="Briefly describe what you're planning..." required></textarea>
           </div>
 
-          <div class="form-group">
-            <label for="subject"><i class="fa-solid fa-tag"></i> Subject</label>
-            <input type="text" id="subject" class="form-control" placeholder="Project Inquiry / Question" required>
-          </div>
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Request a Quote</button>
 
-          <div class="form-group">
-            <label for="message"><i class="fa-solid fa-message"></i> Your Message</label>
-            <textarea id="message" class="form-control" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+          <div style="text-align: center; margin-top: 10px;">
+            <span style="color: var(--text-muted); font-size: 0.85rem;">Or connect instantly:</span><br>
+            <a href="https://wa.me/919952242624?text=Hello%20SYNC,%20I%20would%20like%20to%20discuss%20a%20project."
+              class="btn btn-secondary" style="margin-top: 8px; width: 100%; border-color: rgba(37, 211, 102, 0.4);"
+              target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i> Chat with SYNC
+            </a>
           </div>
-
-          <button type="submit" class="btn" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
         </form>
-        <div id="formMessage" class="form-message"></div>
+        <div id="mainFormMessage" class="form-message"></div>
       </div>
-
     </div>
   </section>
 
@@ -162,45 +201,51 @@
     <div class="modal-card">
       <div class="modal-close" id="closeQuoteModal">&times;</div>
       <div class="modal-header">
-        <p class="script-title">Get In Touch</p>
         <h3>Request a Free Quote</h3>
-        <p>Tell us about your project requirements and we will send you a tailored estimate within 24 hours.</p>
+        <p>Tell us about your project requirements and we will send you a tailored estimate.</p>
       </div>
 
-      <form id="modalQuoteForm">
+      <form id="modalQuoteForm" class="contact-form">
         <div class="form-group">
-          <label for="modal_name"><i class="fa-solid fa-user"></i> Full Name</label>
-          <input type="text" id="modal_name" class="form-control" placeholder="Enter your full name" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="modal_phone"><i class="fa-solid fa-phone"></i> Phone / Mobile Number</label>
-          <input type="tel" id="modal_phone" class="form-control" placeholder="Enter your mobile number" required>
+          <label for="modal_name">Full Name *</label>
+          <input type="text" id="modal_name" name="name" class="form-control" placeholder="Enter your full name"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_email"><i class="fa-solid fa-envelope"></i> Email Address</label>
-          <input type="email" id="modal_email" class="form-control" placeholder="Enter your email address" required>
+          <label for="modal_phone">Phone / WhatsApp *</label>
+          <input type="tel" id="modal_phone" name="phone" class="form-control" placeholder="Enter your contact number"
+            required>
         </div>
 
         <div class="form-group">
-          <label for="modal_service"><i class="fa-solid fa-list-check"></i> Service Required</label>
-          <select id="modal_service" class="form-control" required>
-            <option value="Web Development">Web Development</option>
-            <option value="Mobile App Development">Mobile App Development</option>
-            <option value="Freelance Consultation">Freelancing Solutions</option>
+          <label for="modal_email">Email Address *</label>
+          <input type="email" id="modal_email" name="email" class="form-control" placeholder="name@company.com"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_service">Service Required *</label>
+          <select id="modal_service" name="project_type" class="form-control" required>
+            <option value="Website">Website Development</option>
+            <option value="Web Application">Web Application</option>
+            <option value="Mobile Application">Mobile Application</option>
+            <option value="E-Commerce">E-Commerce Development</option>
             <option value="UI/UX Design">UI/UX Design</option>
-            <option value="Full Stack Project">Full Stack Development</option>
-            <option value="Web Maintenance">Web Maintenance & Hosting</option>
+            <option value="Maintenance">Website Maintenance</option>
+            <option value="Bug Fixing">Bug Fixing</option>
+            <option value="API Integration">API Integration</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="modal_message"><i class="fa-solid fa-message"></i> Project Details</label>
-          <textarea id="modal_message" class="form-control" rows="2" placeholder="Briefly describe your project goals..." required></textarea>
+          <label for="modal_message">Project Details *</label>
+          <textarea id="modal_message" name="description" class="form-control" rows="3"
+            placeholder="Briefly describe your goals..." required></textarea>
         </div>
 
-        <button type="submit" class="btn" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send Quote Request</button>
+        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send
+          Quote Request</button>
       </form>
       <div id="modalFormMessage" class="form-message"></div>
     </div>
@@ -208,33 +253,64 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="Logo.png" alt="SYNC Logo">
-        <div>
-          <h3>SYNC</h3>
-          <p>Smart Young Next-Gen Coders</p>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>SYNC<span>.</span></h3>
+        <p>Digital Solutions for Growing Businesses</p>
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/harishkumar-234" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
 
-      <ul class="footer-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Featured Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
 
-      <div class="social-icons">
-        <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/harishkumar-234" target="_blank" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Business Websites</a></li>
+          <li><a href="services.html">Web Applications</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">E-Commerce</a></li>
+          <li><a href="services.html">UI/UX Design</a></li>
+          <li><a href="services.html">Maintenance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: <a href="mailto:harishhari3045@gmail.com"
+              style="color: var(--text-primary);">harishhari3045@gmail.com</a></li>
+          <li>WhatsApp: <a href="https://wa.me/919952242624" style="color: var(--text-primary);">+91 99522 42624</a>
+          </li>
+        </ul>
       </div>
     </div>
 
-    <p class="copyright">© 2025 SYNC - Smart Young Next-Gen Coders. Co-founded by P. Harish Kumar, B.E. All rights reserved.</p>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 SYNC. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
