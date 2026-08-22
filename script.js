@@ -378,4 +378,58 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize forms if they exist in DOM
   handleLeadSubmit('modalQuoteForm', 'modalFormMessage');
   handleLeadSubmit('mainLeadForm', 'mainFormMessage');
+
+  // --- 10. 3D Card Scroll & Interactive Tilt Animations ---
+  const cardsToAnimate = document.querySelectorAll(
+    '.stat-card, .solution-card, .timeline-content, .pricing-card, .service-card, .industry-card, .care-card, .project-card-wrapper'
+  );
+
+  cardsToAnimate.forEach((card, index) => {
+    card.classList.add('animate-card');
+  });
+
+  if ('IntersectionObserver' in window) {
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+          // Reset inline tilt on scroll out
+          entry.target.style.transform = '';
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    cardsToAnimate.forEach(card => cardObserver.observe(card));
+  } else {
+    cardsToAnimate.forEach(card => card.classList.add('visible'));
+  }
+
+  // Interactive 3D cursor parallax tilt on hover
+  cardsToAnimate.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      if (!card.classList.contains('visible')) return;
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      // Calculate tilt angles (-10deg to +10deg)
+      const rotateX = ((y - centerY) / centerY) * -8;
+      const rotateY = ((x - centerX) / centerX) * 8;
+
+      card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-8px) scale(1.02)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      if (card.classList.contains('visible')) {
+        card.style.transform = '';
+      }
+    });
+  });
 });
