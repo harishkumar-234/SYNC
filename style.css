@@ -1637,6 +1637,29 @@ footer {
   }
 }
 
+/* 3D Card Scroll & Perspective Animations */
+.animate-card {
+  opacity: 0;
+  transform: perspective(1000px) rotateX(25deg) translateY(50px) scale(0.92);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  will-change: opacity, transform;
+}
+
+.animate-card.visible {
+  opacity: 1;
+  transform: perspective(1000px) rotateX(0deg) translateY(0) scale(1);
+}
+
+/* 3D Interactive Hover State for Cards */
+.animate-card.visible:hover {
+  transform: perspective(1000px) translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.12), 0 0 25px rgba(250, 163, 0, 0.18);
+  border-color: var(--border-glow);
+}
+
 /* Accessibility & Preferences */
 @media (prefers-reduced-motion: reduce) {
   * {
