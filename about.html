@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SYNC | Smart Young NextGen Coders</title>
+  <meta name="description"
+    content="Learn about SYNC co-founded by P. Harish Kumar, B.E., our core values, expert engineering team, and our commitment to building modern, reliable software.">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="Logo.png">
+  <link rel="shortcut icon" type="image/png" href="Logo.png">
+  <link rel="apple-touch-icon" href="Logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Preloader: Step-by-Step Logo Construction Animation -->
+  <div class="preloader" id="preloader">
+    <div class="preloader_inner">
+      <div class="logo-builder-wrapper">
+        <div class="logo-energy-halo"></div>
+        <svg class="logo-build-svg" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ffd000" />
+              <stop offset="50%" stop-color="#ff7a00" />
+              <stop offset="100%" stop-color="#ff2a00" />
+            </linearGradient>
+            <linearGradient id="coolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00f0ff" />
+              <stop offset="50%" stop-color="#0080ff" />
+              <stop offset="100%" stop-color="#002fff" />
+            </linearGradient>
+            <radialGradient id="sunOrb" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#ffffff" />
+              <stop offset="35%" stop-color="#ffca00" />
+              <stop offset="100%" stop-color="#ff5500" />
+            </radialGradient>
+            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" result="blur" />
+              <feComposite in="SourceGraphic" in2="blur" operator="over" />
+            </filter>
+          </defs>
+
+          <!-- Step 1: Center Core Orb -->
+          <circle class="core-orb" cx="80" cy="85" r="14" fill="url(#sunOrb)" filter="url(#glow)" />
+
+          <!-- Step 2: Upper Orange Crest Arc -->
+          <path class="upper-ribbon" d="M 52,70 C 50,42 75,25 140,25 C 105,38 68,52 50,88" stroke="url(#warmGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+
+          <!-- Step 3: Lower Cyan/Blue Ribbon Flow -->
+          <path class="lower-ribbon" d="M 50,88 C 30,118 55,142 98,142 C 132,142 148,115 142,82 C 105,82 65,110 35,145" stroke="url(#coolGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+
+          <!-- Step 4: Outer Dynamic Energy Swooshes -->
+          <path class="swoosh-left" d="M 28,32 C 12,65 20,105 32,122" stroke="url(#warmGrad)" stroke-width="4" stroke-linecap="round" />
+          <path class="swoosh-right" d="M 142,75 C 152,98 138,135 85,152" stroke="url(#coolGrad)" stroke-width="4" stroke-linecap="round" />
+        </svg>
+
+        <!-- Step 5: Assembled 3D Logo Reveal with Shimmer -->
+        <div class="logo-reveal-container">
+          <img src="Logo.png" alt="SYNC Logo" class="assembled-logo-img">
+          <div class="logo-shimmer"></div>
+        </div>
+      </div>
+
+      <div class="preloader-text-group">
+        <h2 class="preloader-title">SYNC<span>.</span></h2>
+        <div class="preloader-status-bar">
+          <div class="preloader-status-fill"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed Vertical Quote Button -->
+  <div class="fixed_quote trigger-quote-modal">
+    <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i> Get Quote
+  </div>
+
+  <!-- Floating Actions -->
+  <a href="https://wa.me/919952242624?text=Hello%20SYNC,%20I%20would%20like%20to%20discuss%20a%20project."
+    class="floating-whatsapp" target="_blank" rel="noopener noreferrer" title="Chat with SYNC">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <a href="tel:+919952242624" class="floating-call" title="Call Us Now">
+    <i class="fa-solid fa-phone"></i>
+  </a>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="Logo.png" alt="SYNC Logo">
+        <div class="logo-text">
+          <h1>SYNC<span>.</span></h1>
+          <p>Smart Young NextGen Coders</p>
+        </div>
+      </a>
+
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="btn btn-primary trigger-quote-modal">Start a Project</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Inner Page Banner -->
+  <section class="p-80"
+    style="padding-top: 140px; border-bottom: 1px solid var(--border-color); background: rgba(12, 16, 29, 0.2);">
+    <div class="container" style="text-align: center;">
+      <span class="section-badge">Who We Are</span>
+      <h1 style="font-size: 3rem; margin-bottom: 16px;">Technology Built Around Your Business</h1>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">SYNC co-founders engineer next-generation
+        web architectures and custom workflows to empower growing companies.</p>
+    </div>
+  </section>
+
+  <!-- Identity Details -->
+  <section class="p-80">
+    <div class="container about-grid">
+      <div>
+        <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Dedicated to Digital Transformation</h2>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">SYNC is a digital development company focused on
+          designing and building modern websites, web applications, mobile applications and custom software for
+          businesses and startups.</p>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">Rather than using templates or standard cookie-cutter
+          layouts, we prioritize custom engineering built directly around your organization's goals. We ensure your data
+          systems, user flows, and integrations function together reliably.</p>
+
+        <h4 style="margin-bottom: 12px; font-size: 1.1rem; color: var(--primary-color);">Our Core Approach:</h4>
+        <ul
+          style="list-style: none; display: flex; flex-direction: column; gap: 8px; color: var(--text-muted); font-size: 0.9rem;">
+          <li><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i>
+            <strong>Understanding business requirements:</strong> We mapping specifications before code.
+          </li>
+          <li><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Designing
+              intuitive experiences:</strong> Responsive dashboards and interfaces.</li>
+          <li><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Building
+              reliable software:</strong> Structured database frameworks and safe modules.</li>
+          <li><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i>
+            <strong>Delivering responsive solutions:</strong> High speed across all screen viewports.
+          </li>
+          <li><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Providing
+              post-launch support:</strong> Real-time debugging and security audits.</li>
+        </ul>
+      </div>
+
+      <div class="about-stats">
+        <div class="glass-card stat-card">
+          <i class="fa-solid fa-bezier-curve"></i>
+          <h4>Modern Design</h4>
+          <p>Clean aesthetics that represent your brand authority.</p>
+        </div>
+        <div class="glass-card stat-card">
+          <i class="fa-solid fa-display"></i>
+          <h4>Responsive Development</h4>
+          <p>Highly optimized browser presentation on mobile layouts.</p>
+        </div>
+        <div class="glass-card stat-card">
+          <i class="fa-solid fa-sliders"></i>
+          <h4>Custom Solutions</h4>
+          <p>No generic logic. Built strictly for your database tasks.</p>
+        </div>
+        <div class="glass-card stat-card">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h4>Long-Term Support</h4>
+          <p>Ongoing maintenance to keep platforms secure and fast.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="p-80" style="border-top: 1px solid var(--border-color); background: rgba(12, 16, 29, 0.15);">
+    <div class="container">
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 1000px; margin: 0 auto;">
+
+        <!-- Our Mission -->
+        <div class="glass-card"
+          style="padding: 40px 30px; text-align: left; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; transition: transform 0.3s ease;">
+          <div
+            style="width: 50px; height: 50px; border-radius: 12px; background: rgba(239, 49, 0, 0.1); display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-size: 1.5rem; border: 1px solid rgba(239, 49, 0, 0.2);">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3 style="font-size: 1.5rem; font-weight: 600;">Our <span style="color: var(--primary-color);">Mission</span>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">
+            At SYNC, our mission is to transform ideas and business challenges into meaningful digital solutions. We
+            design and develop modern websites, powerful web applications, mobile apps and custom software that are
+            reliable, user-friendly and built around real business needs.</br></br>
+            We aim to make technology simple, accessible and valuable for businesses of every size by combining
+            thoughtful design, innovative technology and dependable support. Our goal is not just to deliver a project,
+            but to build long-term digital solutions that help our clients operate better, connect with their customers
+            and grow with confidence.
+          </p>
+        </div>
+
+        <!-- Our Vision -->
+        <div class="glass-card"
+          style="padding: 40px 30px; text-align: left; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; transition: transform 0.3s ease;">
+          <div
+            style="width: 50px; height: 50px; border-radius: 12px; background: rgba(250, 163, 0, 0.1); display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.5rem; border: 1px solid rgba(250, 163, 0, 0.2);">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3 style="font-size: 1.5rem; font-weight: 600;">Our <span style="color: var(--accent-color);">Vision</span>
+          </h3>
+          <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">
+            Our vision is to become a trusted digital technology partner for businesses and startups, helping them build
+            a stronger and smarter digital future.</br></br>
+            We aspire to create innovative, scalable and accessible digital solutions that enable businesses to Build,
+            Design and Grow. Through continuous learning, creativity and technology, SYNC aims to turn ideas into
+            impactful digital experiences and become a reliable partner throughout our clients' digital journey.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Members -->
+  <section class="p-80"
+    style="background: rgba(12, 16, 29, 0.3); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Our Founders</span>
+        <h2>Meet the <span>Engineering Team</span></h2>
+        <p>Passionate software engineers co-founding solutions to streamline operations and growth.</p>
+      </div>
+
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; justify-content: center; max-width: 800px; margin: 0 auto;">
+        <!-- Founder 1 -->
+        <div class="glass-card" style="text-align: center;">
+          <img src="Founder.png" alt="P. Harish Kumar"
+            style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; object-position: center 15%; border: 3px solid var(--primary-color); margin-bottom: 20px; box-shadow: 0 4px 15px rgba(239, 49, 0, 0.15);">
+          <h3 style="font-size: 1.3rem; margin-bottom: 6px;">P. Harish Kumar, B.E.</h3>
+          <p
+            style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 16px; letter-spacing: 1px;">
+            Founder & Lead Software Engineer</p>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Expertise in Full Stack Engineering, Solution
+            Architecture, UI/UX Design, and Product Management.</p>
+        </div>
+
+        <!-- Founder 2 -->
+        <div class="glass-card" style="text-align: center;">
+          <img src="Co-Founder.jpeg" alt="S. Kathiravan"
+            style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 3px solid var(--accent-color); margin-bottom: 20px; box-shadow: 0 4px 15px rgba(250, 163, 0, 0.15);">
+          <h3 style="font-size: 1.3rem; margin-bottom: 6px;">S. Kathiravan, B.E.</h3>
+          <p
+            style="color: var(--accent-color); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 16px; letter-spacing: 1px;">
+            Co-Founder</p>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Expertise in Full Stack Development, Database
+            Administration,
+            Web Hosting, UI/UX Design and Solution Architecture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action block -->
+  <section class="p-80">
+    <div class="container" style="text-align: center; max-width: 600px;">
+      <h2 style="margin-bottom: 16px; font-size: 2.2rem;">Ready to build a reliable solution?</h2>
+      <p style="color: var(--text-muted); margin-bottom: 32px;">Connect with our founders directly. Let us walk you
+        through a customized plan for your website, database systems, or mobile integrations.</p>
+      <button class="btn btn-primary trigger-quote-modal">Start Your Project</button>
+    </div>
+  </section>
+
+  <!-- Quote Request Modal Popup -->
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal-card">
+      <div class="modal-close" id="closeQuoteModal">&times;</div>
+      <div class="modal-header">
+        <h3>Request a Free Quote</h3>
+        <p>Tell us about your project requirements and we will send you a tailored estimate.</p>
+      </div>
+
+      <form id="modalQuoteForm" class="contact-form">
+        <div class="form-group">
+          <label for="modal_name">Full Name *</label>
+          <input type="text" id="modal_name" name="name" class="form-control" placeholder="Enter your full name"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_phone">Phone / WhatsApp *</label>
+          <input type="tel" id="modal_phone" name="phone" class="form-control" placeholder="Enter your contact number"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_email">Email Address *</label>
+          <input type="email" id="modal_email" name="email" class="form-control" placeholder="name@company.com"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_service">Service Required *</label>
+          <select id="modal_service" name="project_type" class="form-control" required>
+            <option value="Website">Website Development</option>
+            <option value="Web Application">Web Application</option>
+            <option value="Mobile Application">Mobile Application</option>
+            <option value="E-Commerce">E-Commerce Development</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Maintenance">Website Maintenance</option>
+            <option value="Bug Fixing">Bug Fixing</option>
+            <option value="API Integration">API Integration</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_message">Project Details *</label>
+          <textarea id="modal_message" name="description" class="form-control" rows="3"
+            placeholder="Briefly describe your goals..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send
+          Quote Request</button>
+      </form>
+      <div id="modalFormMessage" class="form-message"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>SYNC<span>.</span></h3>
+        <p>Digital Solutions for Growing Businesses</p>
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/harishkumar-234" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Featured Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Business Websites</a></li>
+          <li><a href="services.html">Web Applications</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">E-Commerce</a></li>
+          <li><a href="services.html">UI/UX Design</a></li>
+          <li><a href="services.html">Maintenance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: <a href="mailto:harishhari3045@gmail.com"
+              style="color: var(--text-primary);">harishhari3045@gmail.com</a></li>
+          <li>WhatsApp: <a href="https://wa.me/919952242624" style="color: var(--text-primary);">+91 99522 42624</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 SYNC. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
