@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEYO Tech Solutions Pvt Ltd</title>
+  <meta name="description"
+    content="Explore ZEYO's agency services including professional websites, custom web applications, mobile apps, UI/UX prototyping, payment gateway setups, and maintenance.">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="Logo.png">
+  <link rel="shortcut icon" type="image/png" href="Logo.png">
+  <link rel="apple-touch-icon" href="Logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Preloader: Dynamic 3D Logo Animation based on Logo.png -->
+  <div class="preloader" id="preloader">
+    <div class="preloader_inner">
+      <div class="logo-builder-wrapper">
+        <!-- Dual Glowing Ambient Energy Halos -->
+        <div class="logo-energy-halo halo-warm"></div>
+        <div class="logo-energy-halo halo-cool"></div>
+        <div class="logo-shockwave"></div>
+        <div class="logo-pulse-ring"></div>
+
+        <!-- Orbiting Dynamic Energy Arcs -->
+        <div class="orbit-arc arc-warm"></div>
+        <div class="orbit-arc arc-cool"></div>
+
+        <!-- Assembled 3D Logo Reveal with Floating and Shimmer -->
+        <div class="logo-reveal-container">
+          <div class="logo-img-box">
+            <img src="Logo.png" alt="ZEYO Logo" class="assembled-logo-img">
+            <div class="logo-shimmer"></div>
+            <div class="logo-gleam-flare"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="preloader-text-group">
+        <h2 class="preloader-title">ZEYO<span>.</span></h2>
+        <p class="preloader-tagline">INNOVATE &bull; CREATE &bull; SYNC</p>
+        <div class="preloader-status-bar">
+          <div class="preloader-status-fill"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed Vertical Quote Button -->
+  <div class="fixed_quote trigger-quote-modal">
+    <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i> Get Quote
+  </div>
+
+  <!-- Floating Actions -->
+  <a href="https://wa.me/919952242624?text=Hello%20SYNC,%20I%20would%20like%20to%20discuss%20a%20project."
+    class="floating-whatsapp" target="_blank" rel="noopener noreferrer" title="Chat with ZEYO">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <a href="tel:+919952242624" class="floating-call" title="Call Us Now">
+    <i class="fa-solid fa-phone"></i>
+  </a>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="Logo.png" alt="ZEYO Logo">
+        <div class="logo-text">
+          <h1>ZEYO<span>.</span></h1>
+          <p>Tech Solutions</p>
+        </div>
+      </a>
+
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="btn btn-primary trigger-quote-modal">Start a Project</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Inner Page Banner -->
+  <section class="p-80"
+    style="padding-top: 140px; border-bottom: 1px solid var(--border-color); background: rgba(12, 16, 29, 0.2);">
+    <div class="container" style="text-align: center;">
+      <span class="section-badge">Capabilities</span>
+      <h1 style="font-size: 3rem; margin-bottom: 16px;">Everything You Need to Build Your Digital Presence</h1>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">We develop robust backend engines,
+        responsive web experiences, and customer-focused mobile layouts to solve actual business problems.</p>
+    </div>
+  </section>
+
+  <!-- Service Cards Section -->
+  <section class="p-80">
+    <div class="container">
+      <div class="services-grid">
+
+        <!-- Card 1: Business Websites -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Business Websites</h3>
+          <p>Professional, responsive websites designed to establish your brand authority, capture leads, and display
+            products cleanly.</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Corporate websites</li>
+            <li><i class="fa-solid fa-circle-check"></i> Landing pages</li>
+            <li><i class="fa-solid fa-circle-check"></i> Portfolio websites</li>
+            <li><i class="fa-solid fa-circle-check"></i> WhatsApp integrations</li>
+          </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
+        </div>
+
+        <!-- Card 2: Web Applications -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Web Applications</h3>
+          <p>Custom web applications designed around your workflow rules to handle database tasks and metrics.</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Admin dashboards</li>
+            <li><i class="fa-solid fa-circle-check"></i> Management systems</li>
+            <li><i class="fa-solid fa-circle-check"></i> Customer portals</li>
+            <li><i class="fa-solid fa-circle-check"></i> CRMs and data logs</li>
+          </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
+        </div>
+
+        <!-- Card 3: Mobile Applications -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Mobile Applications</h3>
+          <p>User-friendly Android applications built for customers, businesses, and internal employee pipelines.</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Android apps</li>
+            <li><i class="fa-solid fa-circle-check"></i> REST API bindings</li>
+            <li><i class="fa-solid fa-circle-check"></i> Push notifications</li>
+            <li><i class="fa-solid fa-circle-check"></i> User authentication</li>
+          </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
+        </div>
+
+        <!-- Card 4: E-Commerce -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+          <h3>E-Commerce</h3>
+          <p>Custom digital stores configured to present catalog data, process payments safely, and manage order
+            lifecycles.</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Product catalogs</li>
+            <li><i class="fa-solid fa-circle-check"></i> Shopping carts & checkout</li>
+            <li><i class="fa-solid fa-circle-check"></i> Payment integrations</li>
+            <li><i class="fa-solid fa-circle-check"></i> Order admin dashboards</li>
+          </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
+        </div>
+
+        <!-- Card 5: UI/UX Design -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>User research, user journey mapping, design systems, and wireframe prototypes for web/mobile interfaces.
+          </p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Website UI layouts</li>
+            <li><i class="fa-solid fa-circle-check"></i> Mobile app screens</li>
+            <li><i class="fa-solid fa-circle-check"></i> Interactive prototypes</li>
+            <li><i class="fa-solid fa-circle-check"></i> Custom Figma components</li>
+          </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
+        </div>
+
+        <!-- Card 6: Maintenance & Support -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3>Maintenance & Support</h3>
+          <p>Ongoing patch updates, data backup verifications, security logs auditing, and platform load enhancements.
+          </p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Real-time debugging</li>
+            <li><i class="fa-solid fa-circle-check"></i> Core version updates</li>
+            <li><i class="fa-solid fa-circle-check"></i> Speed & SEO tuning</li>
+            <li><i class="fa-solid fa-circle-check"></i> Security configurations</li>
+          </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
+        </div>
+
+        <!-- Card 7: API & Integration -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-link"></i></div>
+          <h3>API & Integration</h3>
+          <p>Bridge data communication paths between your main dashboard and third-party systems seamlessly.</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Custom REST API hooks</li>
+            <li><i class="fa-solid fa-circle-check"></i> Gateway processing setup</li>
+            <li><i class="fa-solid fa-circle-check"></i> SMS and WhatsApp logs</li>
+            <li><i class="fa-solid fa-circle-check"></i> Database link pipelines</li>
+          </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
+        </div>
+
+        <!-- Card 8: Business Automation -->
+        <div class="glass-card service-card">
+          <div class="service-card-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Business Automation</h3>
+          <p>Transform recursive manual tracking steps into programmed tasks to save resource time.</p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Automated reports</li>
+            <li><i class="fa-solid fa-circle-check"></i> Event email updates</li>
+            <li><i class="fa-solid fa-circle-check"></i> Document generators</li>
+            <li><i class="fa-solid fa-circle-check"></i> Workflow integrations</li>
+          </ul>
+          <button class="btn btn-secondary trigger-quote-modal" style="margin-top: auto;">Discuss Requirement</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Request Modal Popup -->
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal-card">
+      <div class="modal-close" id="closeQuoteModal">&times;</div>
+      <div class="modal-header">
+        <h3>Request a Free Quote</h3>
+        <p>Tell us about your project requirements and we will send you a tailored estimate.</p>
+      </div>
+
+      <form id="modalQuoteForm" class="contact-form">
+        <div class="form-group">
+          <label for="modal_name">Full Name *</label>
+          <input type="text" id="modal_name" name="name" class="form-control" placeholder="Enter your full name"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_phone">Phone / WhatsApp *</label>
+          <input type="tel" id="modal_phone" name="phone" class="form-control" placeholder="Enter your contact number"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_email">Email Address *</label>
+          <input type="email" id="modal_email" name="email" class="form-control" placeholder="name@company.com"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_service">Service Required *</label>
+          <select id="modal_service" name="project_type" class="form-control" required>
+            <option value="Website">Website Development</option>
+            <option value="Web Application">Web Application</option>
+            <option value="Mobile Application">Mobile Application</option>
+            <option value="E-Commerce">E-Commerce Development</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Maintenance">Website Maintenance</option>
+            <option value="Bug Fixing">Bug Fixing</option>
+            <option value="API Integration">API Integration</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_message">Project Details *</label>
+          <textarea id="modal_message" name="description" class="form-control" rows="3"
+            placeholder="Briefly describe your goals..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send
+          Quote Request</button>
+      </form>
+      <div id="modalFormMessage" class="form-message"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>ZEYO<span>.</span></h3>
+        <p>Digital Solutions for Growing Businesses</p>
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/harishkumar-234" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Featured Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Business Websites</a></li>
+          <li><a href="services.html">Web Applications</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">E-Commerce</a></li>
+          <li><a href="services.html">UI/UX Design</a></li>
+          <li><a href="services.html">Maintenance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: <a href="mailto:harishhari3045@gmail.com"
+              style="color: var(--text-primary);">harishhari3045@gmail.com</a></li>
+          <li>WhatsApp: <a href="https://wa.me/919952242624" style="color: var(--text-primary);">+91 99522 42624</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 ZEYO. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

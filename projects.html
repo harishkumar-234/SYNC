@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEYO Tech Solutions Pvt Ltd</title>
+  <meta name="description"
+    content="Explore professional custom software platforms, mobile applications, admin dashboards, and business systems co-founded and built by ZEYO.">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="Logo.png">
+  <link rel="shortcut icon" type="image/png" href="Logo.png">
+  <link rel="apple-touch-icon" href="Logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Preloader: Dynamic 3D Logo Animation based on Logo.png -->
+  <div class="preloader" id="preloader">
+    <div class="preloader_inner">
+      <div class="logo-builder-wrapper">
+        <!-- Dual Glowing Ambient Energy Halos -->
+        <div class="logo-energy-halo halo-warm"></div>
+        <div class="logo-energy-halo halo-cool"></div>
+        <div class="logo-shockwave"></div>
+        <div class="logo-pulse-ring"></div>
+
+        <!-- Orbiting Dynamic Energy Arcs -->
+        <div class="orbit-arc arc-warm"></div>
+        <div class="orbit-arc arc-cool"></div>
+
+        <!-- Assembled 3D Logo Reveal with Floating and Shimmer -->
+        <div class="logo-reveal-container">
+          <div class="logo-img-box">
+            <img src="Logo.png" alt="ZEYO Logo" class="assembled-logo-img">
+            <div class="logo-shimmer"></div>
+            <div class="logo-gleam-flare"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="preloader-text-group">
+        <h2 class="preloader-title">ZEYO<span>.</span></h2>
+        <p class="preloader-tagline">INNOVATE &bull; CREATE &bull; SYNC</p>
+        <div class="preloader-status-bar">
+          <div class="preloader-status-fill"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed Vertical Quote Button -->
+  <div class="fixed_quote trigger-quote-modal">
+    <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i> Get Quote
+  </div>
+
+  <!-- Floating Actions -->
+  <a href="https://wa.me/919952242624?text=Hello%20SYNC,%20I%20would%20like%20to%20discuss%20a%20project."
+    class="floating-whatsapp" target="_blank" rel="noopener noreferrer" title="Chat with ZEYO">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <a href="tel:+919952242624" class="floating-call" title="Call Us Now">
+    <i class="fa-solid fa-phone"></i>
+  </a>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="Logo.png" alt="ZEYO Logo">
+        <div class="logo-text">
+          <h1>ZEYO<span>.</span></h1>
+          <p>Tech Solutions</p>
+        </div>
+      </a>
+
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="btn btn-primary trigger-quote-modal">Start a Project</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Inner Page Banner -->
+  <section class="p-80"
+    style="padding-top: 140px; border-bottom: 1px solid var(--border-color); background: rgba(12, 16, 29, 0.2);">
+    <div class="container" style="text-align: center;">
+      <span class="section-badge">Case Studies</span>
+      <h1 style="font-size: 3rem; margin-bottom: 16px;">Featured Projects</h1>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Explore digital solutions, web
+        applications, and custom software systems built by ZEYO to automate processes.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section with Filter -->
+  <section class="p-80">
+    <div class="container">
+
+      <!-- Category Filter Buttons -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="website">Websites</button>
+        <button class="filter-btn" data-filter="webapp">Web Apps</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="business">Business Software</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: Restaurant Management System -->
+        <div class="project-card-wrapper" data-category="business" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">Business Software</span>
+                <span class="project-concept-tag">ZEYO Demo Project</span>
+              </div>
+              <h3>Restaurant Management System</h3>
+              <p>Designed to streamline tables order processing, POS billing queue, and automatic kitchen zeyo panels.
+              </p>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="restaurant-management">Case
+                  Study</button>
+                <a href="https://harishkumar-234.github.io/Sync-Restaurant/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Clinic Appointment System -->
+        <div class="project-card-wrapper" data-category="webapp" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">Web Application</span>
+                <span class="project-concept-tag">ZEYO Demo Project</span>
+              </div>
+              <h3>Hospital Management System</h3>
+              <p>Created to simplify doctor schedule bookings, electronic medical record lists, and SMS patient alert
+                reminders.</p>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="clinic-appointment">Case Study</button>
+                <a href="https://medicare-pro-bice.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Real Estate Platform -->
+        <div class="project-card-wrapper" data-category="ecommerce" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">E-Commerce</span>
+                <span class="project-concept-tag">ZEYO Demo Project</span>
+              </div>
+              <h3>Real Estate Platform</h3>
+              <p>Built to provide robust listing directories, customized search query parameters, and interactive agent
+                contact sheets.</p>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="real-estate">Case Study</button>
+                <a href="https://harishkumar-234.github.io/Sync-Real-Estate/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: E-Commerce Store -->
+        <div class="project-card-wrapper" data-category="ecommerce" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">E-Commerce</span>
+                <span class="project-concept-tag">ZEYO Demo Project</span>
+              </div>
+              <h3>E-Commerce Store</h3>
+              <p>Designed to optimize clothing checkout flows, catalog category rendering, discount rules, and local
+                payments.</p>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="ecommerce">Case Study</button>
+                <a href="https://harishkumar-234.github.io/Sync-Life-Style/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Inventory Management System -->
+        <div class="project-card-wrapper" data-category="business" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">Business Software</span>
+                <span class="project-concept-tag">Concept Project</span>
+              </div>
+              <h3>Inventory Management System</h3>
+              <p>Designed to track barcode scanner updates, low material flags, warehouse stocks, and suppliers
+                databases.</p>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="inventory-management">Case Study</button>
+                <a href="https://stock-flow-rho-six.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Student Management System -->
+        <div class="project-card-wrapper" data-category="business" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">Business Software</span>
+                <span class="project-concept-tag">ZEYO Demo Project</span>
+              </div>
+              <h3>Student Management System</h3>
+              <p>A comprehensive school database system handling student profiles, academic progress, grades logging,
+                and receipting.</p>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="student-management">Case Study</button>
+                <a href="https://harishkumar-234.github.io/Sync-School-Management/" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-secondary"><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Business CRM -->
+        <div class="project-card-wrapper" data-category="business" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">Business Software</span>
+                <span class="project-concept-tag">Concept Project</span>
+              </div>
+              <h3>Task Management System</h3>
+              <p>Track Your Daily Tasks with Ease. A simple and efficient tool to manage your daily tasks and stay
+                organized.</p>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="business-crm">Case Study</button>
+                <a href="https://task-master-six-rosy.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Mobile Business Application -->
+        <div class="project-card-wrapper" data-category="mobile" style="transition: var(--transition-smooth);">
+          <div class="glass-card project-card">
+            <div class="project-info">
+              <div class="project-tag-wrap">
+                <span class="project-label">Mobile App</span>
+                <span class="project-concept-tag">Concept Project</span>
+              </div>
+              <h3>Mobile Business Application</h3>
+              <p>An Android app optimized for catalog views, user account history logs, and background push
+                announcements.</p>
+              <div class="project-actions">
+                <button class="btn btn-primary trigger-case-study" data-study="mobile-app">Case Study</button>
+                <button class="btn btn-secondary trigger-quote-modal"><i class="fa-solid fa-envelope"></i>
+                  Inquire</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Details Modal -->
+  <div class="modal-overlay" id="caseStudyModal">
+    <div class="modal-card">
+      <div class="modal-close">&times;</div>
+      <div class="modal-header">
+        <span class="section-badge" id="csIndustry">Industry</span>
+        <h3 id="csTitle" style="margin-top: 10px;">Project Title</h3>
+      </div>
+      <div class="case-study-details">
+        <div class="case-study-block">
+          <h4>The Challenge</h4>
+          <p id="csChallenge">Challenge description details...</p>
+        </div>
+        <div class="case-study-block">
+          <h4>The Solution</h4>
+          <p id="csSolution">Solution details...</p>
+        </div>
+        <div class="case-study-block">
+          <h4>Key Features Built</h4>
+          <p id="csFeatures" style="font-weight: 500; color: var(--text-primary);">Features list...</p>
+        </div>
+        <div class="case-study-block">
+          <h4>Technologies Used</h4>
+          <p id="csTech" style="font-family: monospace;">Tech info...</p>
+        </div>
+        <div class="case-study-block">
+          <h4>Outcome</h4>
+          <p id="csOutcome">Outcome details...</p>
+        </div>
+
+        <div
+          style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: center;">
+          <button class="btn btn-primary trigger-quote-modal"
+            onclick="document.getElementById('caseStudyModal').classList.remove('active')">Build Something
+            Similar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quote Request Modal Popup -->
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal-card">
+      <div class="modal-close" id="closeQuoteModal">&times;</div>
+      <div class="modal-header">
+        <h3>Request a Free Quote</h3>
+        <p>Tell us about your project requirements and we will send you a tailored estimate.</p>
+      </div>
+
+      <form id="modalQuoteForm" class="contact-form">
+        <div class="form-group">
+          <label for="modal_name">Full Name *</label>
+          <input type="text" id="modal_name" name="name" class="form-control" placeholder="Enter your full name"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_phone">Phone / WhatsApp *</label>
+          <input type="tel" id="modal_phone" name="phone" class="form-control" placeholder="Enter your contact number"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_email">Email Address *</label>
+          <input type="email" id="modal_email" name="email" class="form-control" placeholder="name@company.com"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_service">Service Required *</label>
+          <select id="modal_service" name="project_type" class="form-control" required>
+            <option value="Website">Website Development</option>
+            <option value="Web Application">Web Application</option>
+            <option value="Mobile Application">Mobile Application</option>
+            <option value="E-Commerce">E-Commerce Development</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Maintenance">Website Maintenance</option>
+            <option value="Bug Fixing">Bug Fixing</option>
+            <option value="API Integration">API Integration</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="modal_message">Project Details *</label>
+          <textarea id="modal_message" name="description" class="form-control" rows="3"
+            placeholder="Briefly describe your goals..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Send
+          Quote Request</button>
+      </form>
+      <div id="modalFormMessage" class="form-message"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>ZEYO<span>.</span></h3>
+        <p>Digital Solutions for Growing Businesses</p>
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/harishkumar-234" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Featured Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Business Websites</a></li>
+          <li><a href="services.html">Web Applications</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">E-Commerce</a></li>
+          <li><a href="services.html">UI/UX Design</a></li>
+          <li><a href="services.html">Maintenance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: <a href="mailto:harishhari3045@gmail.com"
+              style="color: var(--text-primary);">harishhari3045@gmail.com</a></li>
+          <li>WhatsApp: <a href="https://wa.me/919952242624" style="color: var(--text-primary);">+91 99522 42624</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 ZEYO. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
